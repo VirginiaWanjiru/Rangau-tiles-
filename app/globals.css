@@ -8,7 +8,7 @@
   :root {
 
     --background: 0 0% 100%;
-
+    
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -35,15 +35,18 @@
 
     --accent-foreground: 240 5.9% 10%;
 
+
     --destructive: 0 84.2% 60.2%;
 
     --destructive-foreground: 0 0% 98%;
+
 
     --border: 240 5.9% 90%;
 
     --input: 240 5.9% 90%;
 
     --ring: 240 10% 3.9%;
+
 
     --chart-1: 12 76% 61%;
 
@@ -68,6 +71,7 @@
     --card-foreground: 0 0% 98%;
 
     --popover: 240 10% 3.9%;
+
 
     --popover-foreground: 0 0% 98%;
 
