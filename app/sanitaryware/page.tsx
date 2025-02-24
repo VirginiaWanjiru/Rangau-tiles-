@@ -32,7 +32,7 @@ import {
               </BreadcrumbItem>
               <IoIosArrowForward />
               <BreadcrumbItem>
-                <BreadcrumbPage>Products</BreadcrumbPage>
+                <BreadcrumbPage>Products </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
