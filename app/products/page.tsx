@@ -1,5 +1,14 @@
 import React from "react";
 
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+  } from "@/components/ui/breadcrumb";
+
 export default function Products() {
   return (
     <div className="max-w-7xl mx-auto px-2 py-2">
@@ -11,6 +20,22 @@ export default function Products() {
           </h1>
         </div>
       </div>
+
+      {/*Breadcrumb*/}
+      <div className="flex pt-5 px-2">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Products</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
+      
     </div>
   );
 }
