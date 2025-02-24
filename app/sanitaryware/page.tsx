@@ -7,7 +7,7 @@ import {
     BreadcrumbList,
     BreadcrumbPage,
   } from "@/components/ui/breadcrumb";
-  import { RxDividerVertical } from "react-icons/rx";
+  import { IoIosArrowForward } from "react-icons/io";
 
 
   export default function Sanitaryware() {
@@ -30,7 +30,7 @@ import {
               <BreadcrumbItem>
                 <BreadcrumbLink href="/">Home</BreadcrumbLink>
               </BreadcrumbItem>
-              <RxDividerVertical />
+              <IoIosArrowForward />
               <BreadcrumbItem>
                 <BreadcrumbPage>Products</BreadcrumbPage>
               </BreadcrumbItem>
@@ -39,7 +39,7 @@ import {
         </div>
         </section>
 
-        <h1 className="p-4 text-3xl text-blur font-bold text-[black]">PRODUCTS</h1>
+        <h1 className="p-4 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">PRODUCTS</h1>
 
 
         </>
