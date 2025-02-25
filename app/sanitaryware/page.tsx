@@ -54,7 +54,9 @@ const Products = () => {
                 <BreadcrumbLink href="/">Home</BreadcrumbLink>
               </BreadcrumbItem>
               <IoIosArrowForward />
+              <IoIosArrowForward />
               <BreadcrumbItem>
+                <BreadcrumbPage>Products </BreadcrumbPage>
                 <BreadcrumbPage>Products </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
