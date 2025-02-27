@@ -17,6 +17,8 @@ import {
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 import { IoIosArrowForward } from "react-icons/io";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Products = () => {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
@@ -39,11 +41,14 @@ const Products = () => {
 
   return (
     <>
+    <section className="">
+      <Navbar/>
+    </section>
       <section className="">
         <div className="relative bg-[url('/Products.png')] bg-cover bg-center h-[50vh] content-center">
           <div className="absolute inset-0"></div>
           <div className="relative flex justify-center">
-            <h1 className="text-[#FFFFFF] text-9xl">PRODUCT CATALOG</h1>
+            <h1 className="text-[#FFFFFF] text-8xl">PRODUCT CATALOG</h1>
           </div>
         </div>
 
@@ -54,9 +59,7 @@ const Products = () => {
                 <BreadcrumbLink href="/">Home</BreadcrumbLink>
               </BreadcrumbItem>
               <IoIosArrowForward />
-              <IoIosArrowForward />
               <BreadcrumbItem>
-                <BreadcrumbPage>Products </BreadcrumbPage>
                 <BreadcrumbPage>Products </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -154,6 +157,9 @@ const Products = () => {
           </div>
         </div>
       </div>
+      <section>
+        <Footer/>
+      </section>
     </>
   );
 };
