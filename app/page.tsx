@@ -18,7 +18,7 @@ export default function Home() {
         <Navbar />
       </section>
 
-      <div className="min-h-screen">
+      <div >
         <Carousel images={images} />
       </div>
 
@@ -35,7 +35,7 @@ export default function Home() {
           </section>
 
           <section className="flex justify-center">
-            <Image src="/images/image2.jpg" alt="About Us" width={500} height={300} className="rounded-lg shadow-md" />
+            <Image src="/images/image2.jpg" alt="About Us" width={500} height={300} className="rounded shadow-md" />
           </section>
         </div>
       </div>
@@ -48,16 +48,70 @@ export default function Home() {
           <h1 className="text-lg font-semibold mb-2">Wall Tiles</h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             <div className="w-full flex justify-center">
-              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded-lg shadow-md" />
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
             </div>
             <div className="w-full flex justify-center">
-              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded-lg shadow-md" />
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
             </div>
             <div className="w-full flex justify-center">
-              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded-lg shadow-md" />
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
             </div>
             <div className="w-full flex justify-center">
-              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded-lg shadow-md" />
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1 className="text-lg font-semibold mb-2 text-bold">Floor tiles </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1 className="text-lg font-semibold mb-2 text-bold">Sanitaryware </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1 className="text-lg font-semibold mb-2 text-bold">Cements and Adhesives </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/image2.jpg" alt="Wall Tile" width={500} height={300} className="rounded shadow-md" />
             </div>
           </div>
         </section>
