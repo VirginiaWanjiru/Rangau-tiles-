@@ -87,7 +87,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="mt-10 border border-black shadow-2xl rounded-xl bg-[#F38B2F]">
+            <div className="mt-10 border border-black shadow-2xl rounded-xl bg-[#F38B2F] sm:w-[30rem] md:w-[40rem] mx-auto">
               <h1 className="text-black font-bold text-3xl p-5">
                 Why Choose Us?
               </h1>
