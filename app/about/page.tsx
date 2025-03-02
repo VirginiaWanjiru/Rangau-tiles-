@@ -185,7 +185,7 @@ export default function About() {
         <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">
           Mission
         </h2>
-        <p className="text-justify">
+        <p className="flex text-justify justify-center">
           To provide a diverse range of products to meet the needs of our esteemed clients, including property developers, interior designers, homeowners, and various stakeholders in the real estate industry
         </p>
       </div>
@@ -193,7 +193,7 @@ export default function About() {
         <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">
           Vision
         </h2>
-        <p className="text-justify">
+        <p className="flex text-justify justify-center">
           Leader in tiles and sanitaryware distribution
         </p>
       </div>
