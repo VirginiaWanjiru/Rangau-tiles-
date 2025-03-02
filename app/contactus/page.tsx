@@ -3,7 +3,7 @@ import  React from "react";
 
 
 import { useState } from "react";
-import { MapPin, Phone, Mail, AtSign, Instagram, Facebook, X } from "lucide-react";
+import { MapPin, Phone, Mail, AtSign } from "lucide-react";
 import { useForm } from "react-hook-form";
 import Map from "@/components/Map";
 import Navbar from "@/components/Navbar";
@@ -123,7 +123,7 @@ const Contact = () => {
         >
           {/* Contact Header */}
           <motion.div variants={itemVariants} className="text-left mb-2">
-            <h2 className="text-3xl font-bold text-gray-800">Let's Get in Touch</h2>
+            <h2 className="text-3xl font-bold text-gray-800">Let us Get in Touch</h2>
           </motion.div>
 
           {/* Contact Info & Form - New Layout */}
