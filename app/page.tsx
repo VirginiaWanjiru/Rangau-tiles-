@@ -59,7 +59,7 @@ export default function Home() {
         <h5 className="p-2 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">Products Catalogue</h5>
         <div className="px-8">
         <section>
-          <h1 className="text-lg font-semibold mb-2">Wall Tiles</h1>
+          <h1 className="text-lg font-semibold mb-2"> Wall Tiles </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             <div className="w-full flex justify-center">
               <Image src="/images/wall1.jpg" alt="Wall Tile" width={400} height={200} className="rounded shadow-md" />
