@@ -69,10 +69,10 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
+            title={`Go to slide ${index + 1}`}
             className={`h-3 w-3 rounded-full transition ${
               index === currentIndex ? "bg-white" : "bg-gray-400"
             }`}
-            title={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
