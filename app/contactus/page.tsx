@@ -1,7 +1,7 @@
 "use client";
 import  React from "react";
 import { useState } from "react";
-import { MapPin, Phone, Mail, AtSign, Instagram, Facebook, X } from "lucide-react";
+import { MapPin, Phone, Mail, AtSign } from "lucide-react";
 import { useForm } from "react-hook-form";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
