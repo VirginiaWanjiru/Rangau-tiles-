@@ -122,16 +122,16 @@ const Products = () => {
                   setActiveCategory(value as ProductCategory)
                 }
               >
-                <TabsList className="grid w-[400px] grid-cols-2">
+                <TabsList className="grid w-[200px] md:w-[400px] grid-cols-2">
                   <TabsTrigger
                     value="tiles"
-                    className="data-[state=active]:bg-orange-500 data-[state=active]:text-white"
+                    className="data-[state=active]:bg-orange-500 data-[state=active]:text-white text-xs md:text-sm"
                   >
                     Tiles
                   </TabsTrigger>
                   <TabsTrigger
                     value="sanitaryware"
-                    className="data-[state=active]:bg-orange-500 data-[state=active]:text-white"
+                    className="data-[state=active]:bg-orange-500 data-[state=active]:text-white text-xs md:text-sm"
                   >
                     Sanitaryware
                   </TabsTrigger>
