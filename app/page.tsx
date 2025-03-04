@@ -41,7 +41,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <section>
             <h5 className="p-2 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">About Us</h5>
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed text-justify">
               At Rangau Tiles, we specialize in the supply and delivery of high-quality tiles, cement, adhesives, grouts, sanitary wares, corner strips, and other essential accessories. We understand that building and renovation projects require materials that not only enhance aesthetics but also offer durability and reliability. Therefore, each product we offer is sourced from reputable manufacturers to ensure that all our customers receive the best quality available in the market.
               <br /><br />
               Quality is at the core of our business philosophy. We are committed to delivering products that meet the highest standards, allowing our clients to achieve their vision with confidence. Our experienced team is dedicated to providing exceptional customer service, ensuring that every client feels valued and satisfied with their purchase.
@@ -59,7 +59,7 @@ export default function Home() {
         <h5 className="p-2 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">Products Catalogue</h5>
         <div className="px-8">
         <section>
-          <h1 className="text-lg font-semibold mb-2">Wall Tiles</h1>
+          <h1 className="text-lg font-semibold mb-2"> Wall Tiles </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             <div className="w-full flex justify-center">
               <Image src="/images/wall1.jpg" alt="Wall Tile" width={400} height={200} className="rounded shadow-md" />
@@ -113,6 +113,7 @@ export default function Home() {
           <h1 className="text-lg font-semibold mb-2 text-bold">Sanitaryware </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             <div className="w-full flex justify-center">
+
               <Image src="/images/sanitary4.png" alt="Sanitary ware " width={500} height={300} className="rounded shadow-md" />
             </div>
             <div className="w-full flex justify-center">
@@ -123,6 +124,7 @@ export default function Home() {
             </div>
             <div className="w-full flex justify-center">
               <Image src="/images/sanitary3.png" alt="Sanitary ware" width={500} height={300} className="rounded shadow-md" />
+
             </div>
           </div>
           <div className="mt-4 flex justify-end">

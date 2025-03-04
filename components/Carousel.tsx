@@ -17,9 +17,11 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   }, [slides.length]);
 
   const goToNext = useCallback(() => {
+
     setCurrentIndex((prevIndex) =>
       prevIndex === slides.length - 1 ? 0 : prevIndex + 1
     );
+
   }, [slides.length]);
 
   useEffect(() => {
@@ -46,7 +48,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden carousel-container">
       {/* Image Container */}
       <div
         className="flex transition-transform duration-500 ease-in-out will-change-transform"
@@ -56,6 +58,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
         onTouchEnd={handleTouchEnd}
       >
         {slides.map((slide, index) => (
+
           <div key={index} className="relative flex-shrink-0 w-full h-[350px] md:h-[500px] lg:h-[600px]">
             <Image
               src={slide.image}
@@ -64,6 +67,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
               className="object-cover"
               priority={index === 0} // Load first image faster
             />
+
             {/* Overlay Text */}
             <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center w-3/4 md:w-1/2 p-4 md:p-6 rounded-lg">
               <h2 className="text-xl md:text-3xl font-semibold">{slide.title}</h2>
@@ -79,7 +83,9 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
+
             aria-label={`Go to slide ${index + 1}`}
+
             className={`h-3 w-3 rounded-full transition ${
               index === currentIndex ? "bg-white scale-125" : "bg-gray-400"
             }`}
