@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import TipsCarousel from './TipsCarousel';
 
 const TipBox = () => {
   const [isFaqOpen, setIsFaqOpen] = useState({
@@ -17,17 +18,7 @@ const TipBox = () => {
 
   return (
     <div className="font-sans p-6">
-      <div className="bg-orange-500 p-4 mb-6">
-        <h2 className="text-bold font-medium text-black mb-4">
-          💡 Tips on how to measure how many boxes of tiles you need for a space!
-        </h2>
-        </div>
-
-         <div className="bg-orange-500 p-4 mb-6">
-        <p className="text-bold font-medium text-black">
-          Measure the length and width of the space in feet and multiply them to get the area. Measure the length and width of a single tile, then multiply for its area. Divide the space area by the tile area and add 10-15% for cuts, mistakes, and future repairs.
-        </p>
-      </div>
+     <div className="mb-10 mt-10"> <TipsCarousel/> </div>
 
       <div className="px-8">
         <h2 className="text-lg font-medium text-gray-800 mb-6 ">FAQs</h2>
