@@ -313,7 +313,7 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-medium text-gray-900">Ole Kasasi, Masai Lodge Rd</h4>
-                    <p className="text-xs text-gray-600">Next to Ole Kasasi Police station, Ongata Rongai</p>
+                    <p className="text-sm text-gray-600">Next to Ole Kasasi Police station, Ongata Rongai</p>
                   </div>
                 </div>
               </div>
