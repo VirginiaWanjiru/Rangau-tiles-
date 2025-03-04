@@ -116,14 +116,14 @@ export const ProductGrid = ({ selectedFilters, category }: ProductGridProps) => 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="group relative bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 p-4"
+          className="group relative bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 p-4 mx-8 md:mx-0"
         >
           <div className="flex flex-col items-center">
             {/* Direct image without container */}
             <img
               src={product.image}
               alt={product.name}
-              className="w-48 h-48 object-cover rounded-lg mb-4"
+              className="md:w-58 md:h-48 object-cover rounded-sm mb-4"
             />
 
             {/* Centered product name */}

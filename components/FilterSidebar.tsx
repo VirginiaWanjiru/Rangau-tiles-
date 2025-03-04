@@ -18,7 +18,15 @@ const filters = [
   { id: 'sinks', label: 'Sinks' },
   { id: 'mirrors', label: 'Mirrors' },
   { id: 'cabinets', label: 'Cabinets' },
-  { id: 'faucets', label: 'Faucets' },
+  {
+    id: 'faucets',
+    label: 'Faucets',
+    hasSubcategories: true,
+    subcategories: [
+      { id: 'basin-faucet', label:'Basin Faucet'},
+      { id: 'kitchen-faucet', label:'Kitchen Faucet'}
+    ]
+  },
   { id: 'showers', label: 'Showers' },
   { id: 'bathtubs', label: 'Bathtubs' },
   { id: 'accessories', label: 'Accessories' },
@@ -31,6 +39,32 @@ export const FilterSidebar = ({
   isOpen,
   onClose
 }: FilterSidebarProps) => {
+  // Check if any subcategory of a parent category is selected
+  const isParentCategorySelected = (categoryId: string, subcategories: {id: string, label: string}[]) => {
+    return subcategories.some(sub => selectedFilters.includes(sub.id));
+  };
+
+  // Handle parent category checkbox change
+  const handleParentCategoryChange = (categoryId: string, subcategories: {id: string, label: string}[] | undefined) => {
+    // First toggle the parent category itself
+    onFilterChange(categoryId);
+    
+    // If it has subcategories, toggle them all to match the parent's new state
+    if (subcategories && subcategories.length > 0) {
+      const willBeSelected = !selectedFilters.includes(categoryId);
+      
+      subcategories.forEach(sub => {
+        const isSubSelected = selectedFilters.includes(sub.id);
+        
+        // If parent will be selected and sub is not selected, select the sub
+        // If parent will be unselected and sub is selected, unselect the sub
+        if (willBeSelected !== isSubSelected) {
+          onFilterChange(sub.id);
+        }
+      });
+    }
+  };
+
   return (
     <aside
       className={cn(
@@ -40,34 +74,57 @@ export const FilterSidebar = ({
         isOpen ? "translate-x-0" : "-translate-x-full"
       )}
     >
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-3">
-          <h2 className="text-xl font-medium text-gray-900">Filters</h2>
+      <div>
+        <div className="flex items-center justify-between mt-4 mb-2">
+          <div>
+          <h2 className="text-xs font-medium text-gray-900">Filter By:</h2>
+          </div>
+          <div className="mb-1">
           {selectedFilters.length > 0 && (
             <button
               onClick={onClearFilters}
-              className="text-sm text-orange-500 hover:text-orange-600 transition-colors"
+              className="text-xs font-medium text-orange-500 hover:text-orange-600 transition-colors"
             >
-              Clear filters
+              Clear Filters
             </button>
           )}
-        </div>
+          </div>
+        
         <Button
           variant="ghost"
           size="icon"
           className="md:hidden"
           onClick={onClose}
         >
-          <X className="h-4 w-4" />
+          <X className="h-4 w-4 mt-1" />
         </Button>
+        </div>
       </div>
 
-      {/* Selected filters display */}
-      {selectedFilters.length > 0 && (
+       {/* Selected filters display */}
+       {selectedFilters.length > 0 && (
         <div className="mb-4">
           <div className="flex flex-wrap gap-2">
-            {selectedFilters.map(filterId => {
-              const filter = filters.find(f => f.id === filterId);
+            {selectedFilters.map((filterId) => {
+
+              const mainFilter = filters.find((f) => f.id === filterId);
+              let filter = mainFilter;
+
+              if(!filter){
+
+                for(const mainCategory of filters){
+                  if(mainCategory.hasSubcategories){
+                    const subFilter = mainCategory.subcategories?.find(
+                      (sub) => sub.id === filterId
+                    );
+                    if (subFilter) {
+                      filter = subFilter;
+                      break;
+                    }
+                  }
+                }
+              }
+
               return (
                 <button
                   key={filterId}
@@ -89,19 +146,55 @@ export const FilterSidebar = ({
       {/* Filter checklist */}
       <div className="space-y-4">
         {filters.map((filter) => (
-          <div key={filter.id} className="flex items-center space-x-2">
-            <Checkbox
-              id={filter.id}
-              checked={selectedFilters.includes(filter.id)}
-              onCheckedChange={() => onFilterChange(filter.id)}
-              className="data-[state=checked]:bg-gray-900 data-[state=checked]:border-gray-900"
-            />
-            <Label
-              htmlFor={filter.id}
-              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-            >
-              {filter.label}
-            </Label>
+          <div key={filter.id} className="space-y-2">
+            <div className="flex items-center space-x-2">
+              <Checkbox
+                id={filter.id}
+                checked={selectedFilters.includes(filter.id)}
+                onCheckedChange={() => filter.hasSubcategories 
+                  ? handleParentCategoryChange(filter.id, filter.subcategories) 
+                  : onFilterChange(filter.id)
+                }
+                className="data-[state=checked]:bg-gray-900 data-[state=checked]:border-gray-900"
+              />
+              <Label
+                htmlFor={filter.id}
+                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              >
+                {filter.label}
+                {filter.hasSubcategories &&
+                  isParentCategorySelected(
+                    filter.id,
+                    filter.subcategories || []
+                  ) && (
+                    <span className="ml-2 text-xs text-orange-500">
+                      (filtered)
+                    </span>
+                  )}
+              </Label>
+            </div>
+
+            {/* Sub-filters for Faucets */}
+            {filter.hasSubcategories && (
+              <div className="pl-6 space-y-2">
+                {filter.subcategories?.map((subCategory) => (
+                  <div key={subCategory.id} className="flex items-center space-x-2">
+                    <Checkbox
+                      id={subCategory.id}
+                      checked={selectedFilters.includes(subCategory.id)}
+                      onCheckedChange={() => onFilterChange(subCategory.id)}
+                      className="data-[state=checked]:bg-gray-900 data-[state=checked]:border-gray-900"
+                    />
+                    <Label
+                      htmlFor={subCategory.id}
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      {subCategory.label}
+                    </Label>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>
