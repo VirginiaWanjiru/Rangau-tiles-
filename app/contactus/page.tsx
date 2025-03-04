@@ -10,8 +10,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import background from "@/components/images/Rangau 2 photo.png";
 import hero from "@/components/images/bg-photo.png";
-
-
 import { IoIosArrowForward } from "react-icons/io";
 import {
   Breadcrumb,
@@ -28,10 +26,7 @@ type FormData = {
   product: string;
   message: string;
 };
-const itemVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
-};
+// Removed unused itemVariants
 
 
 const Contact = () => {
