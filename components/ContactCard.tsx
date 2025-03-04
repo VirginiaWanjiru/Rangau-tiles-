@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Facebook, Instagram, X } from "lucide-react";
+import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 interface ContactCardProps {
   icon: React.ReactNode;
@@ -33,9 +33,9 @@ const ContactCard: React.FC<ContactCardProps> = ({
           <div className="flex flex-col space-y-3 mb-1">
             {items.map((item, index) => (
               <div key={index} className="text-gray-600 flex items-center gap-3">
-                <span>{index === 0 ? <Facebook className="w-6 h-6 text-black" /> : 
-                       index === 1 ? <Instagram className="w-6 h-6 text-black" /> : 
-                       <X className="w-6 h-6 text-black" />}</span>
+                <span>{index === 0 ? <FaFacebook className="w-6 h-6 text-black" /> : 
+                       index === 1 ? <FaInstagram className="w-6 h-6 text-black" /> : 
+                       <FaXTwitter className="w-6 h-6 text-black" />}</span>
                 <span className="text-sm">{item}</span>
               </div>
             ))}

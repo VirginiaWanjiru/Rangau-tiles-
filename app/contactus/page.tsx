@@ -109,7 +109,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl font-bold text-white tracking-wider"
+            className="text-[#FFFFFF] text-4xl font-semibold md:text-7xl lg:text-8xl"
           >CONTACT US
           </motion.h1>
         </div>
@@ -132,7 +132,7 @@ const Contact = () => {
 
               {/* Contact Header */}
                 <h1 className="p-4 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">
-                  Get In Touch
+                  Let's Get In Touch!
                 </h1>
                 
       {/* Contact Content */}
@@ -195,7 +195,7 @@ const Contact = () => {
 
   {/* Contact Form - Right Side */}
   <div className="col-span-1 lg:col-span-4 relative pt-0 rounded-lg">
-              <h3 className="text-gray-900 font-medium mb-2 absolute -top-1 left-0 right-0 text-center z-10 mb-10 mt-4">Send us a message!</h3>
+              <h3 className="text-gray-900 font-medium mb-2 absolute -top-8 left-0 right-0 text-center z-10">Send us a message!</h3>
               <div className="bg-gradient-to-r from-orange-400 to-orange-500 shadow-md">
                 <div className="p-6 flex flex-col h-full">
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
