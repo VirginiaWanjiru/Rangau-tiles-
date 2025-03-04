@@ -8,7 +8,7 @@ const TipBox = () => {
     maintenance: false,
   });
 
-  const toggleFaq = (faqKey) => {
+  const toggleFaq = (faqKey ) => {
     setIsFaqOpen((prev) => ({
       ...prev,
       [faqKey]: !prev[faqKey],

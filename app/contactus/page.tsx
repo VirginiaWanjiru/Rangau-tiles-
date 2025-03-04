@@ -11,7 +11,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactCard from "@/components/ContactCard";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import background from "@/components/images/Rangau 2 photo.png"
 
 type FormData = {
