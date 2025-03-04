@@ -300,63 +300,60 @@ const Contact = () => {
             className="w-full h-80 object-cover"
           />
         </div>
-
-
-          {/* Map Section - First Map with Info Card */}
-          <motion.div 
-            variants={itemVariants}
-            className="w-full mt-4 grid grid-cols-1 md:grid-cols-2 gap-6"
-          >
-            {/* Small Map */}
-            <div className="flex justify-center lg:justify-end">
-            <iframe
+        {/* Map Section - First Map with Info Card */}
+      <motion.div 
+        variants={itemVariants}
+        className="w-full mb-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        {/* Small Map */}
+        <div className="flex justify-center md:justify-end h-full">
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6403205474376!2d36.7796049105919!3d-1.3923369985886447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0f08acfe7f8b%3A0x90c5c52bd3122181!2sRangau%20Tiles%20and%20Sanitaryware%20Limited!5e0!3m2!1sen!2ske!4v1740939185655!5m2!1sen!2ske"
-            className="w-full h-64 md:w-[400px] md:h-[250px] border-0"
+            className="w-full h-52 md:h-[220px] rounded-lg shadow-md"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
-            </div>
+          </iframe>
+        </div>
 
-            {/* Location Card */}
-            <div className="flex items-center justify-center">
-              <div className="bg-white rounded-lg border border-orange-500 p-4 shadow-md max-w-md">
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-medium text-gray-900">Ole Kasasi, Masai Lodge Rd</h4>
-                    <p className="text-xs text-gray-600">Next to Ole Kasasi Police station, Ongata Rongai</p>
-                  </div>
-                </div>
+        {/* Location Card */}
+        <div className="flex items-center justify-center md:justify-start">
+          <div className="bg-white rounded-lg border border-orange-500 p-4 shadow-md w-full max-w-xs transform transition-transform hover:scale-102 duration-300">
+            <div className="flex items-start gap-3">
+              <MapPin className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-medium text-gray-900">Ole Kasasi, Masai Lodge Rd</h4>
+                <p className="text-sm text-gray-600">Next to Ole Kasasi Police station, Ongata Rongai</p>
               </div>
             </div>
-          </motion.div>
+          </div>
+        </div>
+      </motion.div>
 
-          {/* Second Map Section */}
-          <motion.div 
-            variants={itemVariants}
-            className="w-full mt-6 grid grid-cols-1 md:grid-cols-2 gap-6"
-          >
-            {/* Location Card */}
-            <div className="flex items-center justify-center">
-              <div className="bg-white rounded-lg border border-orange-500 p-4 shadow-md max-w-md">
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-medium text-gray-900">Exciting, Opp. Exciting Hotel</h4>
-                    <p className="text-xs text-gray-600">Magadi Rd. Ongata Rongai</p>
-                  </div>
-                </div>
+      {/* Second Map Section */}
+      <motion.div 
+        variants={itemVariants}
+        className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        {/* Location Card */}
+        <div className="flex items-center justify-center md:justify-end order-2 md:order-1">
+          <div className="bg-white rounded-lg border border-orange-500 p-4 shadow-md w-full max-w-xs transform transition-transform hover:scale-102 duration-300">
+            <div className="flex items-start gap-3">
+              <MapPin className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-medium text-gray-900">Exciting, Opp. Exciting Hotel</h4>
+                <p className="text-sm text-gray-600">Magadi Rd. Ongata Rongai</p>
               </div>
             </div>
-            
-            {/* Second Map */}
-            <div className="flex justify-center lg:justify-end">
-            <iframe
+          </div>
+        </div>
+        
+        {/* Second Map */}
+        <div className="flex justify-center md:justify-start order-1 md:order-2 h-full">
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6347814345304!2d36.72896331059185!3d-1.395606798585333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0431a62a1bcf%3A0x3c2eb4e18031fe89!2sExciting%20Hotel!5e0!3m2!1sen!2ske!4v1740939307221!5m2!1sen!2ske"
-            className="w-full h-64 md:w-[400px] md:h-[250px] border-0"
+            className="w-full h-52 md:h-[220px] rounded-lg shadow-md"
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            >
+            referrerPolicy="no-referrer-when-downgrade">
             </iframe>
             </div>
           </motion.div>
