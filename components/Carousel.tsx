@@ -69,7 +69,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
             />
 
             {/* Overlay Text */}
-            <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center w-3/4 md:w-1/2 p-4 md:p-6 rounded-lg">
+            <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center mt-16 w-3/4 md:w-1/2 p-8 md:p-6 rounded-lg">
               <h2 className="text-xl md:text-3xl font-semibold">{slide.title}</h2>
               <p className="mt-2 text-sm md:text-lg">{slide.description}</p>
             </div>
