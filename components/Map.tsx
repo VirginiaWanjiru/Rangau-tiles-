@@ -38,7 +38,7 @@ const Map: React.FC<MapProps> = ({ small = false, coordinates = [7.4951, 9.0579]
       );
 
       // Add marker
-      const marker = new mapboxgl.Marker({ color: '#f97316' })
+      new mapboxgl.Marker({ color: '#f97316' })
         .setLngLat(coordinates)
         .addTo(map.current);
     } catch (error) {
