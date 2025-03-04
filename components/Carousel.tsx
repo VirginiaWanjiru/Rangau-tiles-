@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import Image from "next/image";
 
 interface CarouselProps {
   slides: { image: string; title: string; description: string }[];
@@ -13,9 +14,9 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
   };
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
-  };
+  }, [slides.length]);
 
   useEffect(() => {
     const timer = setInterval(goToNext, 5000); // Auto-slide every 5 seconds
@@ -41,7 +42,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden carousel-container">
       {/* Image Container */}
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -52,7 +53,13 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
       >
         {slides.map((slide, index) => (
           <div key={index} className="relative flex-shrink-0 w-full">
-            <img src={slide.image} alt={`Slide ${index + 1}`} className="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover" />
+            <Image
+              src={slide.image}
+              alt={`Slide ${index + 1}`}
+              width={1920}
+              height={1080}
+              className="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover"
+            />
 
             {/* Overlay Text */}
             <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center w-3/4 md:w-1/2 p-4 md:p-6 rounded-lg">
