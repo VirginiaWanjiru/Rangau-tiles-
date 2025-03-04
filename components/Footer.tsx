@@ -63,10 +63,10 @@ const Footer = () => {
         <div className="space-y-6 ml-24">
           <h3 className="text-2xl font-semibold text-black">Follow us</h3>
           <div className="flex items-center space-x-6">
-            <a href="#" className="hover:opacity-80 transition-opacity text-black">
+            <a href="#" className="hover:opacity-80 transition-opacity text-black" title="Instagram">
               <Instagram size={28} />
             </a>
-            <a href="#" className="hover:opacity-80 transition-opacity text-black">
+            <a href="#" className="hover:opacity-80 transition-opacity text-black" title="Custom Icon">
               <svg
                 viewBox="0 0 24 24"
                 className="w-7 h-7 fill-current"
@@ -74,7 +74,7 @@ const Footer = () => {
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg>
             </a>
-            <a href="#" className="hover:opacity-80 transition-opacity text-black">
+            <a href="#" className="hover:opacity-80 transition-opacity text-black" title="Facebook">
               <Facebook size={28} />
             </a>
           </div>
