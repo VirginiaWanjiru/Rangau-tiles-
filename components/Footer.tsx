@@ -34,12 +34,31 @@ const Footer = () => {
             <div className="flex items-start space-x-3">
               <MapPin size={20} className="mt-1 flex-shrink-0 text-black" />
               <div className="space-y-1 text-black">
-                <p className="text-base">OleKasasi, Ongata Rongai</p>
-                <p className="text-base">Exciting, Magadi Road</p>
+              <p className="text-base">
+                <a 
+                  href="https://www.google.com/maps/place/Rangau+Tiles+and+Sanitaryware+Limited/@-1.392337,36.7796049,17z/data=!3m1!4b1!4m6!3m5!1s0x182f0f08acfe7f8b:0x90c5c52bd3122181!8m2!3d-1.392337!4d36.7821852!16s%2Fg%2F11lyzwc_zr?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-black no-underline hover:opacity-80"
+                >
+                  OleKasasi, Ongata Rongai
+                </a>
+              </p>
+              <p className="text-base">
+                <a 
+                  href="https://www.google.com/maps/place/1%C2%B023'43.4%22S+36%C2%B043'54.1%22E/@-1.3953783,36.72912,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-1.3953783!4d36.7316949?hl=en&entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-black no-underline hover:opacity-80"
+                >
+                  Exciting, Magadi Road
+                </a>
+              </p>
               </div>
-            </div>
-          </div>
-        </div>
+
+              </div>
+              </div>
+              </div>
 
         <div className="space-y-6 ml-24">
           <h3 className="text-2xl font-semibold text-black">Follow us</h3>
