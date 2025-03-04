@@ -113,16 +113,18 @@ export default function Home() {
           <h1 className="text-lg font-semibold mb-2 text-bold">Sanitaryware </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             <div className="w-full flex justify-center">
-              <Image src="/images/image2.jpg" alt="Sanitary ware " width={500} height={300} className="rounded shadow-md" />
+
+              <Image src="/images/sanitary4.png" alt="Sanitary ware " width={500} height={300} className="rounded shadow-md" />
             </div>
             <div className="w-full flex justify-center">
-              <Image src="/images/image2.jpg" alt="Sanitary ware" width={500} height={300} className="rounded shadow-md" />
+              <Image src="/images/sanitary.png" alt="Sanitary ware" width={500} height={300} className="rounded shadow-md" />
+            </div>  
+            <div className="w-full flex justify-center">
+              <Image src="/images/sanitary2.png" alt="Sanitary ware" width={500} height={300} className="rounded shadow-md" />
             </div>
             <div className="w-full flex justify-center">
-              <Image src="/images/image2.jpg" alt="Sanitary ware" width={500} height={300} className="rounded shadow-md" />
-            </div>
-            <div className="w-full flex justify-center">
-              <Image src="/images/image2.jpg" alt="Sanitary ware" width={500} height={300} className="rounded shadow-md" />
+              <Image src="/images/sanitary3.png" alt="Sanitary ware" width={500} height={300} className="rounded shadow-md" />
+
             </div>
           </div>
           <div className="mt-4 flex justify-end">
@@ -137,16 +139,16 @@ export default function Home() {
           <h1 className="text-lg font-semibold mb-2 text-bold">Cements and Adhesives </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             <div className="w-full flex justify-center">
-              <Image src="/images/cement.jpg" alt="Wall Tile" width={500} height={100} className="rounded shadow-md" />
+              <Image src="/images/adhesive1.jpg" alt="Wall Tile" width={500} height={100} className="rounded shadow-md" />
             </div>
             <div className="w-full flex justify-center">
-              <Image src="/images/cement2.jpg" alt="Wall Tile" width={500} height={100} className="rounded shadow-md" />
+              <Image src="/images/adhesive4.jpg" alt="Wall Tile" width={500} height={100} className="rounded shadow-md" />
+            </div>
+            <div className="w-full flex justify-center">
+              <Image src="/images/adhesive3.jpg" alt="Wall Tile" width={500} height={100} className="rounded shadow-md" />
             </div>
             <div className="w-full flex justify-center">
               <Image src="/images/adhesive2.jpg" alt="Wall Tile" width={500} height={100} className="rounded shadow-md" />
-            </div>
-            <div className="w-full flex justify-center">
-              <Image src="/images/adhesive1.jpg" alt="Wall Tile" width={500} height={100} className="rounded shadow-md" />
             </div>
           </div>
           <div className="mt-4 flex justify-end">
