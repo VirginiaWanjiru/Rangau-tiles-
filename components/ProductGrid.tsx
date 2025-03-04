@@ -170,8 +170,8 @@ export const ProductGrid = ({ selectedFilters, category }: ProductGridProps) => 
             {/* Suggestions list */}
             <div className="w-full space-y-3">
               {product.suggestions.map((suggestion, index) => (
-                <div key={index} className="flex items-center md:place-items-start gap-2">
-                  <div className="w-4 h-4 md: mt-1 bg-orange-500 flex-shrink-0 rounded"></div>
+                <div key={index} className="flex place-items-start gap-2">
+                  <div className="w-4 h-4 mt-1 bg-orange-500 flex-shrink-0 rounded"></div>
                   <p className="text-sm text-gray-600">{suggestion}</p>
                 </div>
               ))}

@@ -44,7 +44,7 @@ const Products = () => {
       <Navbar />
 
       <section className="">
-        <div className="relative bg-[url('/Products.png')] bg-cover bg-center h-[50vh] flex items-center justify-center">
+        <div className="relative bg-[url('/Products.png')] bg-cover bg-center h-[40vh] md:h-[50vh] lg:h-[70vh] flex items-center justify-center">
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
           <div className="relative flex justify-center mt-9 pt-3">
             <h1 className="text-[#FFFFFF] text-4xl font-semibold md:text-7xl lg:text-8xl">
