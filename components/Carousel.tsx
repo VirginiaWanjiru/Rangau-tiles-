@@ -20,7 +20,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   useEffect(() => {
     const timer = setInterval(goToNext, 5000); // Auto-slide every 5 seconds
     return () => clearInterval(timer);
-  }, []);
+  }, [goToNext]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
@@ -69,6 +69,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
+            title={`Go to slide ${index + 1}`}
             className={`h-3 w-3 rounded-full transition ${
               index === currentIndex ? "bg-white" : "bg-gray-400"
             }`}
