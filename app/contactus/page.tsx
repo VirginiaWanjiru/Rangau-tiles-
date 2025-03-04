@@ -1,9 +1,10 @@
 "use client";
 import  React from "react";
+import Image from 'next/image'
 
 
 import { useState } from "react";
-import { MapPin, Phone, Mail, AtSign, Instagram, Facebook, X } from "lucide-react";
+import { MapPin, Phone, Mail, AtSign } from "lucide-react";
 import { useForm } from "react-hook-form";
 import Map from "@/components/Map";
 import Navbar from "@/components/Navbar";
@@ -86,9 +87,10 @@ const Contact = () => {
       {/* Hero Section */}
       <div className="relative w-full h-64 overflow-hidden">
         <div className="absolute inset-0 bg-gray-800">
-          <img
+          <Image
             src="/lovable-uploads/5581e1e9-157f-4773-ad44-1316ab9056fe.png"
             alt="Contact Banner"
+            width={500} height={300} 
             className="w-full h-full object-cover opacity-70"
           />
         </div>
@@ -123,7 +125,7 @@ const Contact = () => {
         >
           {/* Contact Header */}
           <motion.div variants={itemVariants} className="text-left mb-2">
-            <h2 className="text-3xl font-bold text-gray-800">Let's Get in Touch</h2>
+            <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
           </motion.div>
 
           {/* Contact Info & Form - New Layout */}
