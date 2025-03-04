@@ -1,10 +1,5 @@
 "use client";
 import  React from "react";
-
-import Image from 'next/image'
-
-
-
 import { useState } from "react";
 import { MapPin, Phone, Mail, AtSign } from "lucide-react";
 import { useForm } from "react-hook-form";
@@ -15,8 +10,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import background from "@/components/images/Rangau 2 photo.png";
 import hero from "@/components/images/bg-photo.png";
-
-
 import { IoIosArrowForward } from "react-icons/io";
 import {
   Breadcrumb,
@@ -33,10 +26,7 @@ type FormData = {
   product: string;
   message: string;
 };
-const itemVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
-};
+// Removed unused itemVariants
 
 
 const Contact = () => {
@@ -141,7 +131,7 @@ const Contact = () => {
               </div>
               {/* Contact Header */}
                 <h1 className="p-4 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">
-                  Let's Get In Touch
+                  Let Us Get In Touch
                 </h1>
       {/* Contact Content */}
       <div className="max-w-8xl mx-auto w-full py-12 px-3">
