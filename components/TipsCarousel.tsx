@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const tips = [
   {
@@ -24,7 +23,7 @@ export default function TipsCarousel() {
   const [index, setIndex] = useState(0);
 
   const nextTip = () => setIndex((prev) => (prev + 1) % tips.length);
-  const prevTip = () => setIndex((prev) => (prev - 1 + tips.length) % tips.length);
+  
 
   useEffect(() => {
     const interval = setInterval(nextTip, 5000); // Auto-slide every 5 seconds
@@ -49,8 +48,8 @@ export default function TipsCarousel() {
             transition={{ duration: 0.5 }}
             className="bg-orange-500 p-4 rounded shadow-lg w-full max-w-full text-center"
           >
-            <h2 className="text-bold font-medium text-black mb-4 text-lg sm:text-xl md:text-2xl">{tips[index].title}</h2>
-            <p className="text font-medium text-black text-sm sm:text-base md:text-lg">{tips[index].description}</p>
+            <h2 className="text-bold font-sans font-medium text-black mb-4 text-lg sm:text-xl md:text-2xl">{tips[index].title}</h2>
+            <p className=" font-sm text-black text-sm sm:text-base md:text-lg">{tips[index].description}</p>
           </motion.div>
         </AnimatePresence>
       </div>
