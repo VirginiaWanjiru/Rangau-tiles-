@@ -14,14 +14,14 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Products', path: '/sanitaryware' },
-    { name: 'Call Us', path: '/Contactus' },
+    { name: 'Call Us', path: '/contactus' },
   ];
 
   return (
-    <nav className="top-0 left-0 right-0 z-50 bg-white shadow-sm transition-all duration-300 px-6 py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm transition-all duration-300 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center">
         <Link href="/" className="flex items-center mr-12">
-          <Image src={logo} alt="Logo" className="h-24 w-auto" />
+          <Image src={logo} alt="Logo" className="h-12 w-auto" />
         </Link>
 
         {/* Mobile Menu Button */}

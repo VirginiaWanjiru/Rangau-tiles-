@@ -1,17 +1,23 @@
 "use client";
 import  React from "react";
-
-
 import { useState } from "react";
-import { MapPin, Phone, Mail, AtSign, Instagram, Facebook, X } from "lucide-react";
+import { MapPin, Phone, Mail, AtSign } from "lucide-react";
 import { useForm } from "react-hook-form";
-import Map from "@/components/Map";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactCard from "@/components/ContactCard";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import background from "@/components/images/Rangau 2 photo.png"
+import background from "@/components/images/Rangau 2 photo.png";
+import hero from "@/components/images/bg-photo.png";
+import { IoIosArrowForward } from "react-icons/io";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+} from "@/components/ui/breadcrumb";
 
 type FormData = {
   name: string;
@@ -20,8 +26,11 @@ type FormData = {
   product: string;
   message: string;
 };
+// Removed unused itemVariants
+
 
 const Contact = () => {
+  
   const {
     register,
     handleSubmit,
@@ -53,7 +62,7 @@ const Contact = () => {
 
   const productOptions = [
     { category: "Tiles", options: ["Wall Tiles", "Floor Tiles"] },
-    { category: "Sanitaryware", options: ["Bathroom Fixtures", "Kitchen Fixtures"] }
+    { category: "Sanitaryware", options: ["Toilet", "Basin", "Sink", "Faucet","Cabinet", "Shower","Mirror"] }
   ];
 
   const containerVariants = {
@@ -84,86 +93,111 @@ const Contact = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative w-full h-64 overflow-hidden">
+      <div className="relative w-full h-96 overflow-hidden">
         <div className="absolute inset-0 bg-gray-800">
-          <img
-            src="/lovable-uploads/5581e1e9-157f-4773-ad44-1316ab9056fe.png"
+          <Image
+
+            src={hero}
+
             alt="Contact Banner"
+            width={500} height={300} 
             className="w-full h-full object-cover opacity-70"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-black/30 flex items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-black/30 flex items-center justify-center ">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-5xl font-bold text-white tracking-wider"
-          >
-            CONTACT US
+          >CONTACT US
           </motion.h1>
         </div>
       </div>
 
       {/* Breadcrumb */}
-      <div className="bg-gray-100 py-2 px-6 shadow-sm">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-sm text-gray-600">
-            Home &gt; Contact Us
-          </p>
-        </div>
-      </div>
+      <div className="mt-5 mx-5">
+                <Breadcrumb>
+                  <BreadcrumbList>
+                    <BreadcrumbItem>
+                      <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <IoIosArrowForward />
+                    <BreadcrumbItem>
+                      <BreadcrumbPage>Call Us</BreadcrumbPage>
+                    </BreadcrumbItem>
+                  </BreadcrumbList>
+                </Breadcrumb>
+              </div>
 
+              {/* Contact Header */}
+                <h1 className="p-4 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">
+                  Get In Touch
+                </h1>
+                
       {/* Contact Content */}
-      <div className="max-w-6xl mx-auto w-full py-12 px-6">
+      <div className="max-w-8xl mx-auto w-full py-12 px-3">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={containerVariants}
           className="flex flex-col gap-6"
         >
-          {/* Contact Header */}
-          <motion.div variants={itemVariants} className="text-left mb-2">
-            <h2 className="text-3xl font-bold text-gray-800">Let's Get in Touch</h2>
-          </motion.div>
 
-          {/* Contact Info & Form - New Layout */}
-          <motion.div 
-            variants={itemVariants}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          >
-            {/* First Row - 2 Cards */}
-            <div className="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Phone Contact */}
-              <ContactCard 
-                icon={<Phone className="w-6 h-6 text-gray-700" />} 
-                title="Call Us"
-                items={[
-                  "+254 117263212",
-                  "+254 117263214",
-                  "+254 795216069"
-                ]}
-                extraClasses="h-auto"
-              />
+<motion.div 
+  variants={itemVariants}
+  className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
+>
+  {/* Contact Cards */}
+  <div className="col-span-1 lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
+    <ContactCard 
+      icon={<Phone className="w-6 h-6 text-gray-700" />} 
+      title="Call Us"
+      items={[
+        "+254 117263212",
+        "+254 117263214",
+        "+254 795216069"
+      ]}
+      extraClasses="h-full"
+    />
 
-              {/* Social Media */}
-              <ContactCard 
-                icon={<AtSign className="w-6 h-6 text-gray-700" />} 
-                title="Social Media"
-                items={[
-                  "@Rangau Tiles",
-                  "@Rangau Tiles",
-                  "@Rangau Tiles"
-                ]}
-                socialIcons={true}
-                extraClasses="h-auto"
-              />
-            </div>
+    <ContactCard 
+      icon={<AtSign className="w-6 h-6 text-gray-700" />} 
+      title="Social Media"
+      items={[
+        "@Rangau Tiles",
+        "@Rangau Tiles",
+        "@Rangau Tiles"
+      ]}
+      socialIcons={true}
+      extraClasses="h-full"
+    />
 
-            {/* Contact Form - Right Side */}
-            <div className="col-span-1 relative pt-10">
-              <h3 className="text-gray-900 font-medium mb-2 absolute -top-1 left-0 right-0 text-center z-10">Send us a message!</h3>
+    <ContactCard 
+      icon={<MapPin className="w-6 h-6 text-gray-700" />} 
+      title="Location"
+      items={[
+        "Ground Floor, Sharriff plaza, Ole Kasasi road.",
+        "Opposite Exciting Hotel, Magadi Road"
+      ]}
+      extraClasses="h-full"
+    />
+
+    <ContactCard 
+      icon={<Mail className="w-6 h-6 text-gray-700" />} 
+      title="Email Address"
+      items={[
+        "rangautiles@gmail.com"
+      ]}
+      extraClasses="h-full"
+    />
+  </div>
+
+  {/* Contact Form - Right Side */}
+  <div className="col-span-1 lg:col-span-4 relative pt-0 rounded-lg">
+              <h3 className="text-gray-900 font-medium mb-2 absolute -top-1 left-0 right-0 text-center z-10 mb-10 mt-4">Send us a message!</h3>
               <div className="bg-gradient-to-r from-orange-400 to-orange-500 shadow-md">
-                <div className="p-6 flex flex-col">
+                <div className="p-6 flex flex-col h-full">
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                     <div>
                       <label htmlFor="name" className="block text-black text-sm font-medium mb-1">Your Name</label>
@@ -186,7 +220,7 @@ const Contact = () => {
                           required: "Email is required",
                           pattern: {
                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                            message: "Invalid email address"
+                            message: "Invalid email address."
                           }
                         })}
                       />
@@ -252,93 +286,74 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+</motion.div>
 
-          {/* Second Row - 2 Cards */}
-          <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2">
-            <div className="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Address */}
-              <ContactCard 
-                icon={<MapPin className="w-6 h-6 text-gray-700" />} 
-                title="Location"
-                items={[
-                  "Ground Floor, Sharriff plaza, Ole Kasasi road.",
-                  "Opposite Exciting Hotel, Magadi Road"
-                ]}
-                extraClasses="h-auto"
-              />
 
-              {/* Email */}
-              <ContactCard 
-                icon={<Mail className="w-6 h-6 text-gray-700" />} 
-                title="Email Address"
-                items={[
-                  "rangautiles@gmail.com"
-                ]}
-                extraClasses="h-auto"
-              />
-            </div>
-            
-            {/* Empty space to align with form above */}
-            <div className="col-span-1 hidden md:block"></div>
-          </motion.div>
 
+         
           {/* Logo Section */}
         <div className="w-full flex justify-center my-8">
-        
            <Image
             src={background} 
             alt="Rangau Logo" 
-            className="w-full h-60 object-contain"
+            className="w-full h-80 object-cover"
           />
         </div>
-
-
-          {/* Map Section - First Map with Info Card */}
-          <motion.div 
-            variants={itemVariants}
-            className="w-full mt-4 grid grid-cols-1 md:grid-cols-2 gap-6"
-          >
-            {/* Small Map */}
-            <div className="relative rounded-lg overflow-hidden shadow-md h-64 border border-gray-200">
-              <Map small coordinates={[7.4951, 9.0579]} />
-            </div>
+        {/* Map Section - First Map with Info Card */}
+      <motion.div 
+        variants={itemVariants}
+        className="w-full mb-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        {/* Small Map */}
+        <div className="flex justify-center md:justify-end h-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6403205474376!2d36.7796049105919!3d-1.3923369985886447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0f08acfe7f8b%3A0x90c5c52bd3122181!2sRangau%20Tiles%20and%20Sanitaryware%20Limited!5e0!3m2!1sen!2ske!4v1740939185655!5m2!1sen!2ske"
+            className="w-full h-52 md:h-[220px] rounded-lg shadow-md"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
 
             {/* Location Card */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center md:justify-start">
               <div className="bg-white rounded-lg border border-orange-500 p-4 shadow-md max-w-md">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-medium text-gray-900">Ole Kasasi, Masai Lodge Rd</h4>
-                    <p className="text-xs text-gray-600">Next to Ole Kasasi Police station, Ongata Rongai</p>
+                    <p className="text-sm text-gray-600">Next to Ole Kasasi Police station, Ongata Rongai</p>
                   </div>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Second Map Section */}
-          <motion.div 
-            variants={itemVariants}
-            className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-6"
-          >
-            {/* Location Card */}
-            <div className="flex items-center justify-center">
-              <div className="bg-white rounded-lg border border-orange-500 p-4 shadow-md max-w-md">
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-medium text-gray-900">Exciting, Opp. Exciting Hotel</h4>
-                    <p className="text-xs text-gray-600">Magadi Rd. Ongata Rongai</p>
-                  </div>
-                </div>
+      {/* Second Map Section */}
+      <motion.div 
+        variants={itemVariants}
+        className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        {/* Location Card */}
+        <div className="flex items-center justify-center md:justify-end order-2 md:order-1">
+          <div className="bg-white rounded-lg border border-orange-500 p-4 shadow-md w-full max-w-xs transform transition-transform hover:scale-102 duration-300">
+            <div className="flex items-start gap-3">
+              <MapPin className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-medium text-gray-900">Exciting, Opp. Exciting Hotel</h4>
+                <p className="text-sm text-gray-600">Magadi Rd. Ongata Rongai</p>
               </div>
             </div>
-            
-            {/* Second Map */}
-            <div className="relative rounded-lg overflow-hidden shadow-md h-64 border border-gray-200">
-              <Map small coordinates={[7.5051, 9.0679]} />
+          </div>
+        </div>
+        
+        {/* Second Map */}
+        <div className="flex justify-center md:justify-start order-1 md:order-2 h-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6347814345304!2d36.72896331059185!3d-1.395606798585333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0431a62a1bcf%3A0x3c2eb4e18031fe89!2sExciting%20Hotel!5e0!3m2!1sen!2ske!4v1740939307221!5m2!1sen!2ske"
+            className="w-full h-52 md:h-[220px] rounded-lg shadow-md"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
             </div>
           </motion.div>
         </motion.div>
