@@ -42,7 +42,7 @@ export default function Home() {
           <section>
             <h5 className="p-2 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">About Us</h5>
             <p className="text-sm leading-relaxed text-justify">
-              At Rangau Tiles, we specialize in the supply and delivery of high-quality tiles, cement, adhesives, grouts, sanitary wares, corner strips, and other essential accessories. We understand that building and renovation projects require materials that not only enhance aesthetics but also offer durability and reliability. Therefore, each product we offer is sourced from reputable manufacturers to ensure that all our customers receive the best quality available in the market.
+              At Rangau Tiles,we specialize in the supply and delivery of high-quality tiles, cement, adhesives, grouts, sanitary wares, corner strips, and other essential accessories. We understand that building and renovation projects require materials that not only enhance aesthetics but also offer durability and reliability. Therefore, each product we offer is sourced from reputable manufacturers to ensure that all our customers receive the best quality available in the market.
               <br /><br />
               Quality is at the core of our business philosophy. We are committed to delivering products that meet the highest standards, allowing our clients to achieve their vision with confidence. Our experienced team is dedicated to providing exceptional customer service, ensuring that every client feels valued and satisfied with their purchase.
             </p>
