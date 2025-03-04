@@ -150,7 +150,7 @@ const Products = () => {
               
               </span>
               {selectedFilters.length > 0 && (
-                <div className="flex items-center gap-2 mt-4 mx-12">
+                <div className="flex items-center gap-2 mt-4 mx-12 px-1">
                   <span className="text-xs text-green-700 font-medium">
                     {selectedFilters.length} filter
                     {selectedFilters.length > 1 ? "s" : ""} applied
