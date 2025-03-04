@@ -10,16 +10,22 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
 
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
-  };
+  const goToPrevious = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+    );
+  }, [slides.length]);
 
   const goToNext = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+
+    setCurrentIndex((prevIndex) =>
+      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+    );
+
   }, [slides.length]);
 
   useEffect(() => {
-    const timer = setInterval(goToNext, 5000); // Auto-slide every 5 seconds
+    const timer = setInterval(goToNext, 5000);
     return () => clearInterval(timer);
   }, [goToNext]);
 
@@ -34,8 +40,8 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   const handleTouchEnd = () => {
     if (touchStartX.current !== null && touchEndX.current !== null) {
       const diff = touchStartX.current - touchEndX.current;
-      if (diff > 50) goToNext(); // Swipe left → next slide
-      if (diff < -50) goToPrevious(); // Swipe right → previous slide
+      if (diff > 50) goToNext();
+      if (diff < -50) goToPrevious();
     }
     touchStartX.current = null;
     touchEndX.current = null;
@@ -45,20 +51,21 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
     <div className="relative w-full overflow-hidden carousel-container">
       {/* Image Container */}
       <div
-        className="flex transition-transform duration-500 ease-in-out"
+        className="flex transition-transform duration-500 ease-in-out will-change-transform"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="relative flex-shrink-0 w-full">
+
+          <div key={index} className="relative flex-shrink-0 w-full h-[350px] md:h-[500px] lg:h-[600px]">
             <Image
               src={slide.image}
-              alt={`Slide ${index + 1}`}
-              width={1920}
-              height={1080}
-              className="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover"
+              alt={slide.title}
+              fill
+              className="object-cover"
+              priority={index === 0} // Load first image faster
             />
 
             {/* Overlay Text */}
@@ -76,9 +83,11 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            title={`Go to slide ${index + 1}`}
+
+            aria-label={`Go to slide ${index + 1}`}
+
             className={`h-3 w-3 rounded-full transition ${
-              index === currentIndex ? "bg-white" : "bg-gray-400"
+              index === currentIndex ? "bg-white scale-125" : "bg-gray-400"
             }`}
           />
         ))}

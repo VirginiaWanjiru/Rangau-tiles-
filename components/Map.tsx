@@ -21,13 +21,30 @@ const defaultMapCenter = {
 //Default zoom level, can be adjusted
 const defaultMapZoom = 18
 
-//Map options
-const defaultMapOptions = {
-    zoomControl: true,
-    tilt: 0,
-    gestureHandling: 'auto',
-    mapTypeId: 'satellite',
-};
+
+      // Add navigation controls
+      map.current.addControl(
+        new mapboxgl.NavigationControl({
+          visualizePitch: true,
+        }),
+        'top-right'
+      );
+
+      // Add marker
+      new mapboxgl.Marker({ color: '#f97316' })
+        .setLngLat(coordinates)
+        .addTo(map.current);
+    } catch (error) {
+      console.error("Map initialization error:", error);
+      // If map fails to load, we'll show a fallback
+    }
+
+    // Cleanup
+    return () => {
+      map.current?.remove();
+    };
+  }, [small, coordinates]);
+
 
 const MapComponent = () => {
     return (

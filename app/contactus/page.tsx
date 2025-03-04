@@ -1,5 +1,10 @@
 "use client";
 import  React from "react";
+
+import Image from 'next/image'
+
+
+
 import { useState } from "react";
 import { MapPin, Phone, Mail, AtSign } from "lucide-react";
 import { useForm } from "react-hook-form";
@@ -101,8 +106,11 @@ const Contact = () => {
       <div className="relative w-full h-64 overflow-hidden">
         <div className="absolute inset-0 bg-gray-800">
           <Image
+
             src={hero}
+
             alt="Contact Banner"
+            width={500} height={300} 
             className="w-full h-full object-cover opacity-70"
           />
         </div>
@@ -143,7 +151,13 @@ const Contact = () => {
           variants={containerVariants}
           className="flex flex-col gap-6"
         >
-          
+
+          {/* Contact Header */}
+          <motion.div variants={itemVariants} className="text-left mb-2">
+            <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
+          </motion.div>
+
+
           {/* Contact Info & Form - New Layout */}
           <motion.div 
             variants={itemVariants}
@@ -324,7 +338,7 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-medium text-gray-900">Ole Kasasi, Masai Lodge Rd</h4>
-                    <p className="text-xs text-gray-600">Next to Ole Kasasi Police station, Ongata Rongai</p>
+                    <p className="text-sm text-gray-600">Next to Ole Kasasi Police station, Ongata Rongai</p>
                   </div>
                 </div>
               </div>

@@ -64,7 +64,7 @@ const TipBox = () => {
           {isFaqOpen.indoorOutdoor && (
             <p className="mt-2 text-sm text-gray-700">
 
-              Some tiles are rated for both indoor and outdoor use, but it`&apos;`s essential to check the tile`&apos;`s specifications. Outdoor tiles should be frost-resistant and have a high slip resistance rating. Porcelain tiles are often a good choice for both indoor and outdoor applications.
+              Some tiles are rated for both indoor and outdoor use, but it&apos;s essential to check the tile&apos;s specifications. Outdoor tiles should be frost-resistant and have a high slip resistance rating. Porcelain tiles are often a good choice for both indoor and outdoor applications.
 
             </p>
           )}

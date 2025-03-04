@@ -12,18 +12,19 @@ const sanitarywareProducts = [
     id: 1,
     name: 'Modern Wall-Mounted Sink',
     category: 'sinks',
-    Image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     suggestions: [
       'Perfect for minimalist bathrooms',
       'Pair with matte black fixtures',
       'Add floating shelves for storage'
     ]
   },
+
   {
     id: 2,
     name: 'Minimalist Bathroom Mirror',
     category: 'mirrors',
-    Image: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+    image: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     suggestions: [
       'Install with warm LED lighting',
       'Center above vanity for balance',
@@ -34,7 +35,7 @@ const sanitarywareProducts = [
     id: 3,
     name: 'Smart Toilet with Bidet',
     category: 'toilets',
-    Image: 'https://images.unsplash.com/photo-1584622781867-1c5e578ca499?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+    image: 'https://images.unsplash.com/photo-1584622781867-1c5e578ca499?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     suggestions: [
       'Add motion sensor lighting',
       'Install ventilation nearby',
@@ -45,7 +46,7 @@ const sanitarywareProducts = [
     id: 4,
     name: 'Modern Faucet',
     category: 'faucets',
-    Image: 'https://images.unsplash.com/photo-1584622781867-1c5e578ca499?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+    image: 'https://images.unsplash.com/photo-1584622781867-1c5e578ca499?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     suggestions: [
       'Match with sink material',
       'Consider water efficiency',
@@ -59,7 +60,7 @@ const tilesProducts = [
     id: 5,
     name: 'Marble Effect Porcelain Tiles',
     category: 'porcelain',
-    Image: 'https://images.unsplash.com/photo-1615974679860-955921a8d4e5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+    image: 'https://images.unsplash.com/photo-1615974679860-955921a8d4e5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     suggestions: [
       'Pair with neutral walls',
       'Add gold accents',
@@ -70,7 +71,7 @@ const tilesProducts = [
     id: 6,
     name: 'Wood Effect Ceramic Tiles',
     category: 'ceramic',
-    Image: 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+    image: 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     suggestions: [
       'Mix with natural materials',
       'Use in herringbone pattern',
@@ -81,7 +82,7 @@ const tilesProducts = [
     id: 7,
     name: 'Modern Mosaic Tiles',
     category: 'mosaic',
-    Image: 'https://images.unsplash.com/photo-1616486701797-0f33f61038ec?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+    image: 'https://images.unsplash.com/photo-1616486701797-0f33f61038ec?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     suggestions: [
       'Create feature wall',
       'Balance with solid colors',
@@ -92,7 +93,7 @@ const tilesProducts = [
     id: 8,
     name: 'Natural Stone Tiles',
     category: 'stone',
-    Image: 'https://images.unsplash.com/photo-1616486701797-0f33f61038ec?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+    image: 'https://images.unsplash.com/photo-1616486701797-0f33f61038ec?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     suggestions: [
       'Use in wet areas',
       'Seal for longevity',
@@ -122,7 +123,7 @@ export const ProductGrid = ({ selectedFilters, category }: ProductGridProps) => 
           <div className="flex flex-col items-center">
             {/* Direct image without container */}
             <Image
-              src={product.Image}
+              src={product.image}
               alt={product.name}
               className="w-48 h-48 object-cover rounded-lg mb-4"
             />
