@@ -1,10 +1,5 @@
 "use client";
 import  React from "react";
-
-import Image from 'next/image'
-
-
-
 import { useState } from "react";
 import { MapPin, Phone, Mail, AtSign } from "lucide-react";
 import { useForm } from "react-hook-form";
@@ -103,7 +98,7 @@ const Contact = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative w-full h-64 overflow-hidden">
+      <div className="relative w-full h-96 overflow-hidden">
         <div className="absolute inset-0 bg-gray-800">
           <Image
 
@@ -114,7 +109,7 @@ const Contact = () => {
             className="w-full h-full object-cover opacity-70"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-black/30 flex items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-black/30 flex items-center justify-center ">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -139,10 +134,12 @@ const Contact = () => {
                   </BreadcrumbList>
                 </Breadcrumb>
               </div>
+
               {/* Contact Header */}
                 <h1 className="p-4 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">
-                  Let's Get In Touch
+                  Get In Touch
                 </h1>
+                
       {/* Contact Content */}
       <div className="max-w-8xl mx-auto w-full py-12 px-3">
         <motion.div
@@ -152,68 +149,58 @@ const Contact = () => {
           className="flex flex-col gap-6"
         >
 
-          {/* Contact Header */}
-          <motion.div variants={itemVariants} className="text-left mb-2">
-            <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
-          </motion.div>
+<motion.div 
+  variants={itemVariants}
+  className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
+>
+  {/* Contact Cards */}
+  <div className="col-span-1 lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
+    <ContactCard 
+      icon={<Phone className="w-6 h-6 text-gray-700" />} 
+      title="Call Us"
+      items={[
+        "+254 117263212",
+        "+254 117263214",
+        "+254 795216069"
+      ]}
+      extraClasses="h-full"
+    />
 
+    <ContactCard 
+      icon={<AtSign className="w-6 h-6 text-gray-700" />} 
+      title="Social Media"
+      items={[
+        "@Rangau Tiles",
+        "@Rangau Tiles",
+        "@Rangau Tiles"
+      ]}
+      socialIcons={true}
+      extraClasses="h-full"
+    />
 
-          {/* Contact Info & Form - New Layout */}
-          <motion.div 
-            variants={itemVariants}
-            className="grid grid-cols-1 lg:grid-cols-12 gap-8"
-          >
-            {/* First Row - 2 Cards */}
-            <div className="col-span-1 lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Phone Contact */}
-              <ContactCard 
-                icon={<Phone className="w-6 h-6 text-gray-700" />} 
-                title="Call Us"
-                items={[
-                  "+254 117263212",
-                  "+254 117263214",
-                  "+254 795216069"
-                ]}
-                extraClasses="h-45"
-              />
+    <ContactCard 
+      icon={<MapPin className="w-6 h-6 text-gray-700" />} 
+      title="Location"
+      items={[
+        "Ground Floor, Sharriff plaza, Ole Kasasi road.",
+        "Opposite Exciting Hotel, Magadi Road"
+      ]}
+      extraClasses="h-full"
+    />
 
-              {/* Social Media */}
-              <ContactCard 
-                icon={<AtSign className="w-6 h-6 text-gray-700" />} 
-                title="Social Media"
-                items={[
-                  "@Rangau Tiles",
-                  "@Rangau Tiles",
-                  "@Rangau Tiles"
-                ]}
-                socialIcons={true}
-                extraClasses="h-45"
-              />
-              {/* Address */}
-              <ContactCard 
-                icon={<MapPin className="w-6 h-6 text-gray-700" />} 
-                title="Location"
-                items={[
-                  "Ground Floor, Sharriff plaza, Ole Kasasi road.",
-                  "Opposite Exciting Hotel, Magadi Road"
-                ]}
-                extraClasses="h-40"
-              />
-              {/* Email */}
-              <ContactCard 
-                icon={<Mail className="w-6 h-6 text-gray-700" />} 
-                title="Email Address"
-                items={[
-                  "rangautiles@gmail.com"
-                ]}
-                extraClasses="h-40"
-              />
+    <ContactCard 
+      icon={<Mail className="w-6 h-6 text-gray-700" />} 
+      title="Email Address"
+      items={[
+        "rangautiles@gmail.com"
+      ]}
+      extraClasses="h-full"
+    />
+  </div>
 
-            </div>
-
-            {/* Contact Form - Right Side */}
-            <div className="col-span-1 lg:col-span-4 relative pt-10">
-              <h3 className="text-gray-900 font-medium mb-2 absolute -top-1 left-0 right-0 text-center z-10">Send us a message!</h3>
+  {/* Contact Form - Right Side */}
+  <div className="col-span-1 lg:col-span-4 relative pt-0 rounded-lg">
+              <h3 className="text-gray-900 font-medium mb-2 absolute -top-1 left-0 right-0 text-center z-10 mb-10 mt-4">Send us a message!</h3>
               <div className="bg-gradient-to-r from-orange-400 to-orange-500 shadow-md">
                 <div className="p-6 flex flex-col h-full">
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -304,8 +291,11 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+</motion.div>
 
+
+
+         
           {/* Logo Section */}
         <div className="w-full flex justify-center my-8">
            <Image
