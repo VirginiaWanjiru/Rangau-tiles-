@@ -165,9 +165,10 @@ const Contact = () => {
       icon={<AtSign className="w-6 h-6 text-gray-700" />} 
       title="Social Media"
       items={[
-        "@Rangau Tiles",
-        "@Rangau Tiles",
-        "@Rangau Tiles"
+        "@Rangau Tiles and Sanitaryware Ltd",
+        "@rangautiles",
+        "@rangautiles",
+        "@rangautiles"
       ]}
       socialIcons={true}
       extraClasses="h-full"
@@ -286,7 +287,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-</motion.div>
+          </motion.div>
 
 
 
