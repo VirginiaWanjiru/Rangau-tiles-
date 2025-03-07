@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaXTwitter, FaTiktok } from "react-icons/fa6";
 
 interface ContactCardProps {
   icon: React.ReactNode;
@@ -35,7 +35,9 @@ const ContactCard: React.FC<ContactCardProps> = ({
               <div key={index} className="text-gray-600 flex items-center gap-3">
                 <span>{index === 0 ? <FaFacebook className="w-6 h-6 text-black" /> : 
                        index === 1 ? <FaInstagram className="w-6 h-6 text-black" /> : 
-                       <FaXTwitter className="w-6 h-6 text-black" />}</span>
+                       index === 2 ? <FaTiktok className="w-6 h-6 text-black" /> :
+                       <FaXTwitter className="w-6 h-6 text-black" />
+                       }</span>
                 <span className="text-sm">{item}</span>
               </div>
             ))}
