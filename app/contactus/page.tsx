@@ -132,7 +132,7 @@ const Contact = () => {
 
               {/* Contact Header */}
                 <h1 className="p-4 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">
-                  Let's Get In Touch!
+                Let&apos;s Get In Touch!
                 </h1>
                 
       {/* Contact Content */}
