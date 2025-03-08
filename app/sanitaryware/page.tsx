@@ -142,7 +142,7 @@ const Products = () => {
             {/* Product Grid Section */}
             <div className="mb-8">
             
-            <span className="mx-12 md:mx-0 inline-flex items-center rounded-md bg-green-800 px-2 py-1 text-sm font-medium text-orange-200 ring-1 ring-yellow-600/20 ring-inset">
+            <span className="mx-12 md:mx-2 inline-flex items-center rounded-md bg-green-800 px-2 py-1 text-sm font-medium text-orange-200 ring-1 ring-yellow-600/20 ring-inset">
               
                 {activeCategory === "sanitaryware"
                   ? "Sanitaryware Products"
