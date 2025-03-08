@@ -306,41 +306,41 @@ const sanitarywareProducts = [
       "Durable construction with smooth operation."
       ] },
   
-    // BM- products (Basins) → category: "basins", subcategory: "basin"
-    { id: 58, name: "BM-45604C", category: "basins", subcategory: "basin", image: "/BM-45604C.png", suggestions: [
-        "Elegant design with timeless appeal.",
-        "Smooth surface for easy cleaning and maintenance.",
-        "A perfect complement to any stylish bathroom decor."
+    // BM- products (mirrors) → category: "mirrors", subcategory: "basin"
+    { id: 58, name: "BM-45604C", category: "mirrors", subcategory: "", image: "/BM-45604C.png", suggestions: [
+      "Illuminate your space with a sleek, modern mirror that enhances natural light.",
+      "Crafted with a high-quality reflective surface and refined framing for a sophisticated look.",
+      "Perfect for bathrooms and dressing areas, combining functionality with elegant design."
       ] },
-    { id: 59, name: "BM-45604G", category: "basins", subcategory: "basin", image: "/BM-45604G.jpg", suggestions: [
-        "Elegant design with timeless appeal.",
-        "Smooth surface for easy cleaning and maintenance.",
-        "A perfect complement to any stylish bathroom decor."
+    { id: 59, name: "BM-45604G", category: "mirrors", subcategory: "", image: "/BM-45604G.jpg", suggestions: [
+      "Illuminate your space with a sleek, modern mirror that enhances natural light.",
+      "Crafted with a high-quality reflective surface and refined framing for a sophisticated look.",
+      "Perfect for bathrooms and dressing areas, combining functionality with elegant design."
       ] },
-    { id: 60, name: "BM-45604Y", category: "basins", subcategory: "basin", image: "/BM-45604Y.png", suggestions: [
-        "Elegant design with timeless appeal.",
-        "Smooth surface for easy cleaning and maintenance.",
-        "A perfect complement to any stylish bathroom decor."
+    { id: 60, name: "BM-45604Y", category: "mirrors", subcategory: "", image: "/BM-45604Y.png", suggestions: [
+      "Illuminate your space with a sleek, modern mirror that enhances natural light.",
+      "Crafted with a high-quality reflective surface and refined framing for a sophisticated look.",
+      "Perfect for bathrooms and dressing areas, combining functionality with elegant design."
       ] },
-    { id: 61, name: "BM-6227",    category: "basins", subcategory: "basin", image: "/BM-6227.png",    suggestions: [
-        "Elegant design with timeless appeal.",
-        "Smooth surface for easy cleaning and maintenance.",
-        "A perfect complement to any stylish bathroom decor."
+    { id: 61, name: "BM-6227",    category: "mirrors", subcategory: "", image: "/BM-6227.png",    suggestions: [
+      "Illuminate your space with a sleek, modern mirror that enhances natural light.",
+      "Crafted with a high-quality reflective surface and refined framing for a sophisticated look.",
+      "Perfect for bathrooms and dressing areas, combining functionality with elegant design."
       ] },
-    { id: 62, name: "BM-8675",    category: "basins", subcategory: "basin", image: "/BM-8675.png",    suggestions: [
-        "Elegant design with timeless appeal.",
-        "Smooth surface for easy cleaning and maintenance.",
-        "A perfect complement to any stylish bathroom decor."
+    { id: 62, name: "BM-8675",    category: "mirrors", subcategory: "", image: "/BM-8675.png",    suggestions: [
+      "Illuminate your space with a sleek, modern mirror that enhances natural light.",
+      "Crafted with a high-quality reflective surface and refined framing for a sophisticated look.",
+      "Perfect for bathrooms and dressing areas, combining functionality with elegant design."
       ] },
-    { id: 63, name: "BM-8759",    category: "basins", subcategory: "basin", image: "/BM-8759.png",    suggestions: [
-        "Elegant design with timeless appeal.",
-        "Smooth surface for easy cleaning and maintenance.",
-        "A perfect complement to any stylish bathroom decor."
+    { id: 63, name: "BM-8759",    category: "mirrors", subcategory: "", image: "/BM-8759.png",    suggestions: [
+      "Illuminate your space with a sleek, modern mirror that enhances natural light.",
+      "Crafted with a high-quality reflective surface and refined framing for a sophisticated look.",
+      "Perfect for bathrooms and dressing areas, combining functionality with elegant design."
       ] },
-    { id: 64, name: "BM-9003",    category: "basins", subcategory: "basin", image: "/BM-9003.png",    suggestions: [
-        "Elegant design with timeless appeal.",
-        "Smooth surface for easy cleaning and maintenance.",
-        "A perfect complement to any stylish bathroom decor."
+    { id: 64, name: "BM-9003",    category: "mirrors", subcategory: "", image: "/BM-9003.png",    suggestions: [
+      "Illuminate your space with a sleek, modern mirror that enhances natural light.",
+      "Crafted with a high-quality reflective surface and refined framing for a sophisticated look.",
+      "Perfect for bathrooms and dressing areas, combining functionality with elegant design."
       ] },
   
     // SW- products (Showers) → category: "showers"
