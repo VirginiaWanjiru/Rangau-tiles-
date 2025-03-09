@@ -1366,70 +1366,71 @@ const tilesProducts = [
   
   ];
   
-export const ProductGrid = ({
-  selectedFilters,
-  category,
-}: ProductGridProps) => {
-  const products =
-    category === "sanitaryware" ? sanitarywareProducts : tilesProducts;
-
-  const filteredProducts =
-    selectedFilters.length === 0
-      ? products
-      : products.filter(
-          (product) =>
-            selectedFilters.includes(product.category) ||
-            ("subcategory" in product &&
-              selectedFilters.includes(product.subcategory!))
-        );
-
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {filteredProducts.map((product) => (
-        <motion.div
-          key={product.id}
-          layout
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="group relative bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 p-4 mx-8 md:mx-0"
-        >
-          <div className="flex flex-col items-center">
-            {/* Direct image without container */}
-            <Image
-              src={product.image}
-              alt={product.name}
-              layout="responsive"
-              width={250}
-              height={200}
-              // className="md:w-58 md:h-48 object-cover rounded-sm mb-4"
-              className="object-cover rounded-sm mb-2"
-            />
-
-            {/* Centered product name */}
-            <h3 className="text-lg font-medium text-gray-900 mb-4 text-center">
-              {product.name}
-            </h3>
-
-            {/* Suggestions list */}
-            <div className="w-full space-y-3">
-              {product.suggestions.map((suggestion, index) => (
-                <div key={index} className="flex place-items-start gap-2">
-                  <div className="w-4 h-4 mt-1 bg-orange-500 flex-shrink-0 rounded"></div>
-                  <p className="text-sm text-gray-600">{suggestion}</p>
-                </div>
-              ))}
+  export const ProductGrid = ({
+    selectedFilters,
+    category,
+  }: ProductGridProps) => {
+    const products =
+      category === "sanitaryware" ? sanitarywareProducts : tilesProducts;
+  
+    const filteredProducts =
+      selectedFilters.length === 0
+        ? products
+        : products.filter(
+            (product) =>
+              selectedFilters.includes(product.category) ||
+              ("subcategory" in product &&
+                selectedFilters.includes(product.subcategory!))
+          );
+  
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filteredProducts.map((product) => (
+          <motion.div
+            key={product.id}
+            layout
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="group relative bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 p-4 mx-8 md:mx-0"
+          >
+            <div className="flex flex-col items-center">
+              {/* Fixed-size image container */}
+              <div className="w-[250px] h-[200px] relative mb-2">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-sm"
+                />
+              </div>
+  
+              {/* Centered product name */}
+              <h3 className="text-lg font-medium text-gray-900 mb-4 text-center">
+                {product.name}
+              </h3>
+  
+              {/* Suggestions list */}
+              <div className="w-full space-y-3">
+                {product.suggestions.map((suggestion, index) => (
+                  <div key={index} className="flex place-items-start gap-2">
+                    <div className="w-4 h-4 mt-1 bg-orange-500 flex-shrink-0 rounded"></div>
+                    <p className="text-sm text-gray-600">{suggestion}</p>
+                  </div>
+                ))}
+              </div>
+  
+              {/* Price and category at the bottom */}
+              <div className="mt-4 flex items-center justify-between w-full pt-4 border-t">
+                <span className="text-sm text-gray-500 capitalize">
+                  {product.category}
+                </span>
+              </div>
             </div>
-
-            {/* Price and category at the bottom */}
-            <div className="mt-4 flex items-center justify-between w-full pt-4 border-t">
-              <span className="text-sm text-gray-500 capitalize">
-                {product.category}
-              </span>
-            </div>
-          </div>
-        </motion.div>
-      ))}
-    </div>
-  );
-};
+          </motion.div>
+        ))}
+      </div>
+    );
+  };
+  
