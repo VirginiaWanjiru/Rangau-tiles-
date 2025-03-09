@@ -13,6 +13,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Blue from "@/components/images/Blue.png";
+import { motion } from "framer-motion";
 import Bright from "@/components/images/bright.jpeg";
 import Bt from "@/components/images/bt.jpeg";
 import Patterned from "@/components/images/patterned.jpeg";
@@ -26,12 +27,16 @@ export default function About() {
         <Navbar />
       </section>
       <section>
-        <div className="relative bg-[url('/about.png')] bg-cover bg-center h-[50vh] flex items-center justify-center text-center px-4">
+        <div className="relative bg-[url('/about.png')] bg-cover bg-center h-[40vh] md:h-[50vh] lg:h-[70vh] flex items-center justify-center text-center px-4">
           <div className="absolute inset-0"></div>
-          <div className="relative">
-            <h1 className="text-white text-4xl md:text-6xl lg:text-8xl">
+          <div className="relative flex justify-center mt-9 pt-3">
+            <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-white text-4xl font-semibold md:text-6xl lg:text-8xl">
               ABOUT RANGAU TILES
-            </h1>
+            </motion.h1>
           </div>
         </div>
 

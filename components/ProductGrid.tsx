@@ -1362,7 +1362,67 @@ const tilesProducts = [
         "A modern, stylish option for accenting walls or surfaces.",
         "Complements both contemporary and classic interiors.",
         "Works well with both warm and cool color palettes."
-      ] }
+      ] },
+      { id: 171, name: "Adhesive 1", category: "cag", subcategory: "adhesives", image: "/Adhesive 1.jpg", suggestions: [
+        "A modern, stylish option for accenting walls or surfaces.",
+        "Complements both contemporary and classic interiors.",
+        "Works well with both warm and cool color palettes."
+      ] },
+      { id: 172, name: "Adhesive 2", category: "cag", subcategory: "adhesives", image: "/Adhesive 2.jpg", suggestions: [
+        "A modern, stylish option for accenting walls or surfaces.",
+        "Complements both contemporary and classic interiors.",
+        "Works well with both warm and cool color palettes."
+      ] },
+      { id: 173, name: "Adhesive 3", category: "cag", subcategory: "adhesives", image: "/Adhesive 3.jpg", suggestions: [
+        "A modern, stylish option for accenting walls or surfaces.",
+        "Complements both contemporary and classic interiors.",
+        "Works well with both warm and cool color palettes."
+      ] },
+      { id: 174, name: "Adhesive 4", category: "cag", subcategory: "adhesives", image: "/Adhesive 4.jpg", suggestions: [
+        "A modern, stylish option for accenting walls or surfaces.",
+        "Complements both contemporary and classic interiors.",
+        "Works well with both warm and cool color palettes."
+      ] },
+      { id: 175, name: "Adhesive 5", category: "cag", subcategory: "adhesives", image: "/Adhesive 5.jpg", suggestions: [
+        "A modern, stylish option for accenting walls or surfaces.",
+        "Complements both contemporary and classic interiors.",
+        "Works well with both warm and cool color palettes."
+      ] },
+      { id: 176, name: "Adhesive 6", category: "cag", subcategory: "adhesives", image: "/Adhesive 6.jpg", suggestions: [
+        "A modern, stylish option for accenting walls or surfaces.",
+        "Complements both contemporary and classic interiors.",
+        "Works well with both warm and cool color palettes."
+      ] },
+      { id: 177, name: "Adhesive 7", category: "cag", subcategory: "adhesives", image: "/Adhesive 7.jpg", suggestions: [
+        "A modern, stylish option for accenting walls or surfaces.",
+        "Complements both contemporary and classic interiors.",
+        "Works well with both warm and cool color palettes."
+      ] },
+      { id: 178, name: "KP-Diamond", category: "cag", subcategory: "cement", image: "/KP-Diamond2.png", suggestions: [
+        "Portland Cement clinker (PCC) + Gypsum",
+        "Less cement in high strength concrete mixes smoother surface finish",
+        "Environmentally friendly, less carbondioxide emitted"
+      ] },
+      { id: 179, name: "KP-Gold", category: "cag", subcategory: "cement", image: "/KP-Gold.png", suggestions: [
+        "Portland Cement Clinker + Natural Pozzolana + Gypsum + Limestone",
+        "Has low heat of hydration hence reduced leaching of calcium hydroxide",
+        "Gives desired bonding and ability to stick in concrete"
+      ] },
+      { id: 180, name: "KP-Platinum", category: "cag", subcategory: "cement", image: "/KP-Platinum_3_1.png", suggestions: [
+        "Portland cement clinker (PCC) + Gypsum",
+        "Stronger class of cement, able to withstand higher pressures and loads which is essential in civil construction",
+        "High strength precast work"
+      ] },
+      { id: 181, name: "KP-Silver", category: "cag", subcategory: "cement", image: "/KP-Silver2.png", suggestions: [
+        "Portland Cement Clinker + natural Pozzolana + Gypsum + limestone",
+        "Low heat of hydration and reduces the leaching of calcium hydroxide",
+        "Strong: achieves the desired final-day strength for concrete"
+      ] },
+      { id: 182, name: "KP-Super-Gold", category: "cag", subcategory: "cement", image: "/KP-Super-Gold.png", suggestions: [
+        "Portland Cement Clinker (PCC) + Natural Pozzolana + Gypsum + Limestone",
+        "Has low heat of hydration hence reduced leaching of calcium hydroxide",
+        "Easy to mix and apply"
+      ] },
   
   ];
   
