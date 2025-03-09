@@ -7,6 +7,7 @@ import { FilterSidebar } from "@/components/FilterSidebar";
 import { TilesFilterSidebar } from "@/components/TilesFilterSidebar";
 import { Button } from "@/components/ui/button";
 import { MenuIcon } from "lucide-react";
+import { motion } from "framer-motion";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -47,9 +48,13 @@ const Products = () => {
         <div className="relative bg-[url('/Products.png')] bg-cover bg-center h-[40vh] md:h-[50vh] lg:h-[70vh] flex items-center justify-center">
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
           <div className="relative flex justify-center mt-9 pt-3">
-            <h1 className="text-[#FFFFFF] text-4xl font-semibold md:text-5xl lg:text-8xl">
+            <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-[#FFFFFF] text-4xl font-semibold md:text-6xl lg:text-8xl">
               PRODUCT CATALOG
-            </h1>
+            </motion.h1>
           </div>
         </div>
 

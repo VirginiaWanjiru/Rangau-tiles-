@@ -30,6 +30,16 @@ const filters = [
       { id: "60x60", label: "60 x 60" },
     ],
   },
+  {
+    id: "cag",
+    label: "Cement and Adhesives",
+    hasSubcategories: true,
+    subcategories: [
+      { id: "cement", label: "Cement" },
+      { id: "adhesives", label: "Adhesives" },
+      { id: "grout", label: "Grout" },
+    ],
+  },
 ];
 
 export const TilesFilterSidebar = ({

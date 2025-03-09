@@ -93,7 +93,7 @@ const Contact = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative w-full h-96 overflow-hidden">
+      <div className="relative w-full h-[40vh] md:h-[50vh] lg:h-[70vh] overflow-hidden">
         <div className="absolute inset-0 bg-gray-800">
           <Image
 
