@@ -350,7 +350,7 @@ const Contact = () => {
         {/* Second Map */}
         <div className="flex justify-center md:justify-start order-1 md:order-2 h-full">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6347814345304!2d36.72896331059185!3d-1.395606798585333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0431a62a1bcf%3A0x3c2eb4e18031fe89!2sExciting%20Hotel!5e0!3m2!1sen!2ske!4v1740939307221!5m2!1sen!2ske"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.6351689407084!2d36.72911997496591!3d-1.3953782985914411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMjMnNDMuNCJTIDM2wrA0Myc1NC4xIkU!5e0!3m2!1sen!2ske!4v1741601374857!5m2!1sen!2ske"
             className="w-full h-52 md:h-[220px] rounded-lg shadow-md"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade">
