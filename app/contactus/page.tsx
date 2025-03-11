@@ -88,6 +88,13 @@ const Contact = () => {
     },
   };
 
+  const socialMediaItems = [
+    { platform: "facebook", username: "@Rangau Tiles and Sanitaryware Ltd", url: "https://www.facebook.com/people/Rangau-Tiles-and-Sanitaryware-Ltd/61570018273699/" },
+    { platform: "instagram", username: "@rangautiles", url: "https://www.instagram.com/rangautiles/" },
+    { platform: "tiktok", username: "@rangautiles", url: "https://www.tiktok.com/@rangautiles" },
+    { platform: "twitter", username: "@rangautiles", url: "https://x.com/rangautiles" }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
@@ -162,17 +169,12 @@ const Contact = () => {
     />
 
     <ContactCard 
-      icon={<AtSign className="w-6 h-6 text-gray-700" />} 
-      title="Social Media"
-      items={[
-        "@Rangau Tiles and Sanitaryware Ltd",
-        "@rangautiles",
-        "@rangautiles",
-        "@rangautiles"
-      ]}
-      socialIcons={true}
-      extraClasses="h-full"
-    />
+     icon={<AtSign className="w-6 h-6 text-gray-700" />}
+     title="Social Media"
+     items={socialMediaItems}
+     socialIcons={true}
+     extraClasses="h-full"
+     />
 
     <ContactCard 
       icon={<MapPin className="w-6 h-6 text-gray-700" />} 
