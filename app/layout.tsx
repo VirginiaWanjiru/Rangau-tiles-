@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RangaU Tiles - Best Tiles in Nairobi",
+  title: "Rangau Tiles - Best Tiles in Nairobi",
   description: "Find high-quality tiles in Nairobi, Kenya.",
+  icons: {
+    icon: "/Rangau_1200x1200.ico",
+  }
 };
 
 export default function RootLayout({
