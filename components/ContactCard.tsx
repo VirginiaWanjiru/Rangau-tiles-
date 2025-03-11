@@ -1,12 +1,17 @@
-"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { FaFacebook, FaInstagram, FaXTwitter, FaTiktok } from "react-icons/fa6";
 
+interface SocialMediaItem {
+  platform: string;
+  username: string;
+  url: string;
+}
+
 interface ContactCardProps {
   icon: React.ReactNode;
   title: string;
-  items: string[];
+  items: string[] | SocialMediaItem[];
   extraClasses?: string;
   socialIcons?: boolean;
 }
@@ -31,20 +36,27 @@ const ContactCard: React.FC<ContactCardProps> = ({
         <h3 className="text-lg font-medium text-orange-500 mb-3">{title}</h3>
         {socialIcons ? (
           <div className="flex flex-col space-y-3 mb-1">
-            {items.map((item, index) => (
-              <div key={index} className="text-gray-600 flex items-center gap-3">
-                <span>{index === 0 ? <FaFacebook className="w-6 h-6 text-black" /> : 
-                       index === 1 ? <FaInstagram className="w-6 h-6 text-black" /> : 
-                       index === 2 ? <FaTiktok className="w-6 h-6 text-black" /> :
-                       <FaXTwitter className="w-6 h-6 text-black" />
-                       }</span>
-                <span className="text-sm">{item}</span>
-              </div>
+            {(items as SocialMediaItem[]).map((item, index) => (
+              <a 
+                key={index} 
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 flex items-center gap-3 hover:text-orange-500 transition-colors"
+              >
+                <span>
+                  {item.platform === 'facebook' ? <FaFacebook className="w-6 h-6 text-black hover:scale-110 transition-transform" /> : 
+                   item.platform === 'instagram' ? <FaInstagram className="w-6 h-6 text-black hover:scale-110 transition-transform" /> : 
+                   item.platform === 'tiktok' ? <FaTiktok className="w-6 h-6 text-black hover:scale-110 transition-transform" /> :
+                   <FaXTwitter className="w-6 h-6 text-black hover:scale-110 transition-transform" />}
+                </span>
+                <span className="text-sm">{item.username}</span>
+              </a>
             ))}
           </div>
         ) : (
           <ul className="space-y-2 text-center mb-1">
-            {items.map((item, index) => (
+            {(items as string[]).map((item, index) => (
               <li key={index} className="text-gray-600">{item}</li>
             ))}
           </ul>
