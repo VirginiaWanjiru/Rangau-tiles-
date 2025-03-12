@@ -20,7 +20,7 @@ export default function Home() {
       description: "Experience our wide range of 30 by 40 and 40 by 40 floor tiles ",
     },
     {
-      image: "/images/cement.jpg",
+      image: "/images/cements.png",
       title: "CEMENT AND ADHESIVES ",
       description: "Our trusted Kenyan cements and adhesives for your construction use",
     },
