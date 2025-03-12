@@ -77,7 +77,7 @@ export default function Home() {
           </div>
           <div className="mt-4 flex justify-end">
               <a href="/sanitaryware" className="flex items-center text-gray-500 hover:text-gray-950 transition">
-              See more 
+              Browse to see the best wall tiles
                 <ArrowUpRightIcon className=" h-6 w-14 mr-4 " />
               </a>
             </div>
@@ -102,7 +102,7 @@ export default function Home() {
 
           <div className="mt-4 flex justify-end">
               <a href="/sanitaryware" className="flex items-center text-gray-500 hover:text-gray-950 transition">
-              See more 
+              View our quality floor tiles 
                 <ArrowUpRightIcon className=" h-6 w-14 mr-4 " />
               </a>
             </div>
@@ -129,7 +129,7 @@ export default function Home() {
           </div>
           <div className="mt-4 flex justify-end">
               <a href="/sanitaryware" className="flex items-center text-gray-500 hover:text-gray-950 transition">
-              See more 
+              Browse our sanitaryware selection
                 <ArrowUpRightIcon className=" h-6 w-14 mr-4 " />
               </a>
             </div>
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
           <div className="mt-4 flex justify-end">
               <a href="/sanitaryware" className="flex items-center text-gray-500 hover:text-gray-950 transition">
-              See more 
+              Discover quality cement and adhesives
                 <ArrowUpRightIcon className=" h-6 w-14 mr-4 " />
               </a>
             </div>
