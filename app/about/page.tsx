@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Head from "next/head";
 import { RxCheck } from "react-icons/rx";
 import {
   Breadcrumb,
@@ -23,18 +24,30 @@ import Tyle from "@/components/images/Tyle.jpeg";
 export default function About() {
   return (
     <>
+      <Head>
+        <title>About Rangau Tiles and Sanitaryware Limited | Premium Tiles, Sanitaryware in Nairobi, Rongai & Kenya</title>
+        <meta name="description" content="Learn more about Rangau Tiles and Sanitaryware Limited, a leading supplier of premium building materials including tiles, cement, adhesives, grouts, and sanitaryware in Nairobi, Rongai, and across Kenya." />
+        <meta name="keywords" content="Rangau Tiles, Sanitaryware, Tiles in Nairobi, Rongai tiles, Kenya tiles, premium tiles, quality sanitaryware, building materials, ceramic tiles, floor tiles, wall tiles" />
+        <link rel="canonical" href="https://rangautiles.com/about" />
+        <meta property="og:title" content="About Rangau Tiles and Sanitaryware Limited" />
+        <meta property="og:description" content="Learn more about Rangau Tiles and Sanitaryware Limited, a leading supplier of premium tiles and sanitaryware in Nairobi, Rongai, and Kenya." />
+        <meta property="og:image" content="https://rangautiles.com/about.png" />
+        <meta property="og:url" content="https://rangautiles.com/about" />
+      </Head>
+      
       <section>
         <Navbar />
       </section>
+      
       <section>
         <div className="relative bg-[url('/about.png')] bg-cover bg-center h-[40vh] md:h-[50vh] lg:h-[70vh] flex items-center justify-center text-center px-4">
           <div className="absolute inset-0"></div>
           <div className="relative flex justify-center mt-9 pt-3">
             <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-white text-4xl font-semibold md:text-6xl lg:text-8xl">
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-white text-4xl font-semibold md:text-6xl lg:text-8xl">
               ABOUT RANGAU TILES
             </motion.h1>
           </div>
@@ -64,31 +77,15 @@ export default function About() {
           <div className="p-4 w-full md:w-1/2">
             <div>
               <p>
-                Established as a partnership on April 13, 2024, and later
-                incorporated as a limited company on November 29, 2024, Rangau
-                Tiles and Sanitaryware Limited is a leading supplier of premium
-                building materials. Based in OleKasasi, Ongata Rongai, with a
-                branch in Exciting, opposite Exciting Hotel, we are dedicated to
-                serving property developers, interior designers, homeowners, and
-                industry professionals with high-quality products.
+                Established as a partnership on April 13, 2024, and later incorporated as a limited company on November 29, 2024, Rangau Tiles and Sanitaryware Limited is a leading supplier of premium building materials. Based in OleKasasi, Ongata Rongai, with a branch in Exciting, opposite Exciting Hotel, we are dedicated to serving property developers, interior designers, homeowners, and industry professionals with high-quality products in Nairobi, Rongai, and across Kenya.
               </p>
               <br />
               <p>
-                At Rangau Tiles, we specialize in supplying and delivering
-                top-tier tiles, cement, adhesives, grouts, sanitary ware, corner
-                strips, and other essential building accessories. Understanding
-                the importance of both aesthetics and durability in construction
-                and renovation, we source our products from trusted
-                manufacturers to ensure superior quality.
+                At Rangau Tiles, we specialize in supplying and delivering top-tier tiles, cement, adhesives, grouts, sanitaryware, corner strips, and other essential building accessories. Understanding the importance of both aesthetics and durability in construction and renovation, we source our products from trusted manufacturers to ensure superior quality.
               </p>
               <br />
               <p>
-                Our commitment to excellence drives everything we do. We
-                prioritize customer satisfaction by providing expert guidance,
-                reliable service, and a seamless buying experience. Whether you
-                are undertaking a large-scale development or enhancing your
-                living space, our extensive product range and efficient delivery
-                services make us the ideal partner for your project.
+                Our commitment to excellence drives everything we do. We prioritize customer satisfaction by providing expert guidance, reliable service, and a seamless buying experience. Whether you are undertaking a large-scale development or enhancing your living space, our extensive product range and efficient delivery services make us the ideal partner for your project.
               </p>
             </div>
 
@@ -97,115 +94,99 @@ export default function About() {
                 Why Choose Us?
               </h1>
               <p className="mt-5 text-justify font-bold p-5">
-                <span className="flex flex-row">
-                  <RxCheck /> Customer Focus – Putting our clients first by
-                  understanding their needs.
+                <span className="flex flex-row items-center">
+                  <RxCheck className="mr-2" /> Customer Focus – Putting our clients first by understanding their needs.
                 </span>
                 <br />
-                <span className="flex flex-row">
-                  <RxCheck /> Quality Assurance – Offering only the best,
-                  responsibly sourced materials.
+                <span className="flex flex-row items-center">
+                  <RxCheck className="mr-2" /> Quality Assurance – Offering only the best, responsibly sourced materials.
                 </span>
                 <br />
-                <span className="flex flex-row">
-                  <RxCheck /> Design Expertise – Providing expert consultation
-                  to help clients choose the perfect products.
+                <span className="flex flex-row items-center">
+                  <RxCheck className="mr-2" /> Design Expertise – Providing expert consultation to help clients choose the perfect products.
                 </span>
                 <br />
-                <span className="flex flex-row">
-                  <RxCheck /> Product Variety – Featuring a diverse selection of
-                  styles, colors, textures, and materials.
+                <span className="flex flex-row items-center">
+                  <RxCheck className="mr-2" /> Product Variety – Featuring a diverse selection of styles, colors, textures, and materials.
                 </span>
                 <br />
-                <span className="flex flex-row">
-                  <RxCheck /> Reliability – Ensuring timely deliveries and
-                  consistent service.
+                <span className="flex flex-row items-center">
+                  <RxCheck className="mr-2" /> Reliability – Ensuring timely deliveries and consistent service.
                 </span>
                 <br />
-                <span className="flex flex-row">
-                  <RxCheck /> Integrity – Upholding transparency, ethical
-                  business practices, and fair pricing.
+                <span className="flex flex-row items-center">
+                  <RxCheck className="mr-2" /> Integrity – Upholding transparency, ethical business practices, and fair pricing.
                 </span>
                 <br />
-                <span className="flex flex-row">
-                  <RxCheck /> Excellent Service – Going the extra mile,
-                  including installation support.
+                <span className="flex flex-row items-center">
+                  <RxCheck className="mr-2" /> Excellent Service – Going the extra mile, including installation support.
                 </span>
                 <br />
-                <span className="flex flex-row">
-                  <RxCheck /> Sustainability – Promoting eco-friendly options
-                  and responsible sourcing.
+                <span className="flex flex-row items-center">
+                  <RxCheck className="mr-2" /> Sustainability – Promoting eco-friendly options and responsible sourcing.
                 </span>
               </p>
             </div>
           </div>
 
-<div className="flex flex-col md:flex-row mr-4 md:mr-20 pl-4 md:pl-16">
-  <div className="p-1 w-full md:w-60">
-    <div>
-      <Image src={Tyle} alt="" className="rounded-xl w-full" />
-    </div>
-    <br />
-    <div>
-      <Image src={Bt} alt="" className="w-full md:w-[600px] h-96 rounded-xl" />
-    </div>
-    <br />
-    <div>
-      <Image
-        src={Bright}
-        alt=""
-        className="w-full md:w-[600px] h-96 rounded-xl"
-      />
-    </div>
-  </div>
+          <div className="flex flex-col md:flex-row mr-4 md:mr-20 pl-4 md:pl-16">
+            <div className="p-1 w-full md:w-60">
+              <div>
+                <Image src={Tyle} alt="Display of premium tiles at Rangau Tiles showroom" className="rounded-xl w-full" />
+              </div>
+              <br />
+              <div>
+                <Image src={Bt} alt="Contemporary tile design showcased by Rangau Tiles" className="w-full md:w-[600px] h-96 rounded-xl" />
+              </div>
+              <br />
+              <div>
+                <Image src={Bright} alt="Bright modern tile design from Rangau Tiles collection" className="w-full md:w-[600px] h-96 rounded-xl" />
+              </div>
+            </div>
 
-  <div className="p-1 w-full md:w-60">
-    <div className="mt-[-52px]">
-      <Image src={Blue} alt="" className="w-full" />
-    </div>
-    <br />
-    <div>
-      <Image
-        src={Patterned}
-        alt=""
-        className="w-full md:w-[600px] h-80 rounded-xl"
-      />
-    </div>
-    <br />
-    <div>
-      <Image src={Tile} alt="" className="rounded-xl w-full" />
-    </div>
-  </div>
-</div>
-
+            <div className="p-1 w-full md:w-60">
+              <div className="mt-[-52px]">
+                <Image src={Blue} alt="Blue themed tile design available at Rangau Tiles" className="w-full" />
+              </div>
+              <br />
+              <div>
+                <Image src={Patterned} alt="Patterned tile design for elegant interiors at Rangau Tiles" className="w-full md:w-[600px] h-80 rounded-xl" />
+              </div>
+              <br />
+              <div>
+                <Image src={Tile} alt="High-quality tiles from Rangau Tiles collection" className="rounded-xl w-full" />
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="mt-20 p-5 rounded-xl lg:h-[30rem] sm:h-auto bg-[#F38B2F] bg-opacity-5 relative w-full md:w-[87rem] mx-auto px-2 py-2">
-  <div className="max-w-7xl mx-auto">
-    <h1 className="text-3xl mt-5 font-bold text-black text-center">
-      OUR VALUES
-    </h1>
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
-      <div className="bg-white p-6 rounded-xl shadow-md h-auto md:h-60">
-        <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">
-          Mission
-        </h2>
-        <p className="flex text-justify justify-center">
-          To provide a diverse range of products to meet the needs of our esteemed clients, including property developers, interior designers, homeowners, and various stakeholders in the real estate industry
-        </p>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-md h-auto md:h-60">
-        <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">
-          Vision
-        </h2>
-        <p className="flex text-justify justify-center">
-          Leader in tiles and sanitaryware distribution
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+          <div className="max-w-7xl mx-auto">
+            <h1 className="text-3xl mt-5 font-bold text-black text-center">
+              OUR VALUES
+            </h1>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+              <div className="bg-white p-6 rounded-xl shadow-md h-auto md:h-60">
+                <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">
+                  Mission
+                </h2>
+                <p className="flex text-justify justify-center">
+                  To provide a diverse range of products to meet the needs of our esteemed clients, including property developers, interior designers, homeowners, and various stakeholders in the real estate industry.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow-md h-auto md:h-60">
+                <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">
+                  Vision
+                </h2>
+                <p className="flex text-justify justify-center">
+                  Leader in tiles and sanitaryware distribution across Nairobi, Rongai, and Kenya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
+      
       <section className="mt-16">
         <Footer />
       </section>
