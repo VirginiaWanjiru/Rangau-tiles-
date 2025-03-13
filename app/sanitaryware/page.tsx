@@ -26,7 +26,7 @@ const Products = () => {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [activeCategory, setActiveCategory] =
-    useState<ProductCategory>("sanitaryware");
+    useState<ProductCategory>("tiles");
   const isMobile = useIsMobile();
 
   const handleFilterChange = (filter: string) => {
@@ -122,7 +122,7 @@ const Products = () => {
 
             {/* Filters Sidebar */}
             <div className="mt-4">
-              {activeCategory === "sanitaryware" ? (
+              {activeCategory === "tiles" ? (
                 <FilterSidebar
                   selectedFilters={selectedFilters}
                   onFilterChange={handleFilterChange}
