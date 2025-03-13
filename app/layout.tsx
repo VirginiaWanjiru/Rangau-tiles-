@@ -68,7 +68,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "name": "Rangau Tiles and Sanitaryware Limited",
               "url": "https://rangautiles.com",
-              "logo": "https://rangautiles.com/Rangau_1200x1200.ico",
+              "logo": "https://rangautiles.com/Rangau-logo.png",
               "description": "Supplier of high-quality ceramic tiles, porcelain tiles, and modern sanitaryware for residential and commercial projects in Nairobi, Rongai, and across Kenya.",
               "address": {
                 "@type": "PostalAddress",
