@@ -77,7 +77,7 @@ export default function About() {
           <div className="p-4 w-full md:w-1/2">
             <div>
               <p>
-                Established as a partnership on April 13, 2024, and later incorporated as a limited company on November 29, 2024, Rangau Tiles and Sanitaryware Limited is a leading supplier of premium building materials. Based in OleKasasi, Ongata Rongai, with a branch in Exciting, opposite Exciting Hotel, we are dedicated to serving property developers, interior designers, homeowners, and industry professionals with high-quality products in Nairobi, Rongai, and across Kenya.
+                Rangau Tiles and Sanitaryware Limited is a leading supplier of premium building materials. Based in OleKasasi, Ongata Rongai, with a branch in Exciting, opposite Exciting Hotel, we are dedicated to serving property developers, interior designers, homeowners, and industry professionals with high-quality products in Nairobi, Rongai, and across Kenya.
               </p>
               <br />
               <p>
@@ -168,18 +168,19 @@ export default function About() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
               <div className="bg-white p-6 rounded-xl shadow-md h-auto md:h-60">
                 <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">
-                  Mission
-                </h2>
-                <p className="flex text-justify justify-center">
-                  To provide a diverse range of products to meet the needs of our esteemed clients, including property developers, interior designers, homeowners, and various stakeholders in the real estate industry.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-xl shadow-md h-auto md:h-60">
-                <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">
                   Vision
                 </h2>
                 <p className="flex text-justify justify-center">
                   Leader in tiles and sanitaryware distribution across Nairobi, Rongai, and Kenya.
+                </p>
+
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow-md h-auto md:h-60">
+                <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">
+                  Mission
+                </h2>
+                <p className="flex text-justify justify-center">
+                  To provide a diverse range of products to meet the needs of our esteemed clients, including property developers, interior designers, homeowners, and various stakeholders in the real estate industry.
                 </p>
               </div>
             </div>
