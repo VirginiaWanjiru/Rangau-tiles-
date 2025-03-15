@@ -7,6 +7,7 @@ import { FilterSidebar } from "@/components/FilterSidebar";
 import { TilesFilterSidebar } from "@/components/TilesFilterSidebar";
 import { Button } from "@/components/ui/button";
 import { MenuIcon } from "lucide-react";
+import { motion } from "framer-motion";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -41,18 +42,23 @@ const Products = () => {
 
   return (
     <>
-    <section className="">
-      <Navbar/>
-    </section>
+      <Navbar />
+
       <section className="">
-        <div className="relative bg-[url('/Products.png')] bg-cover bg-center h-[50vh] content-center">
-          <div className="absolute inset-0"></div>
-          <div className="relative flex justify-center">
-            <h1 className="text-[#FFFFFF] text-8xl">PRODUCT CATALOG</h1>
+        <div className="relative bg-[url('/Products.png')] bg-cover bg-center h-[40vh] md:h-[50vh] lg:h-[70vh] flex items-center justify-center">
+          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div className="relative flex justify-center mt-9 pt-3">
+            <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-[#FFFFFF] text-4xl font-semibold md:text-6xl lg:text-8xl">
+              PRODUCT CATALOG
+            </motion.h1>
           </div>
         </div>
 
-        <div className="mt-5 mx-5">
+        <div className="mt-5 mx-6">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -67,52 +73,30 @@ const Products = () => {
         </div>
       </section>
 
-      <h1 className="p-4 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">
-        PRODUCTS
-      </h1>
-
       <div className="min-h-screen bg-gray-50/50">
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          {/* Centered Tabs Navigation */}
-          <div className="flex justify-center mb-8">
-            <Tabs
-              value={activeCategory}
-              onValueChange={(value) =>
-                setActiveCategory(value as ProductCategory)
-              }
-            >
-              <TabsList className="grid w-[400px] grid-cols-2">
-                <TabsTrigger
-                  value="tiles"
-                  className="data-[state=active]:bg-orange-500 data-[state=active]:text-white"
-                >
-                  Tiles
-                </TabsTrigger>
-                <TabsTrigger
-                  value="sanitaryware"
-                  className="data-[state=active]:bg-orange-500 data-[state=active]:text-white"
-                >
-                  Sanitaryware
-                </TabsTrigger>
-              </TabsList>
-            </Tabs>
-          </div>
-
-          <div className="flex gap-8">
-            {/* Mobile menu button */}
+        <div className="max-w-7xl mx-auto px-2 py-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Left Section - Product Title & Filters */}
+          <div className="col-span-1">
+            <div className="flex items-center">
             {isMobile && (
               <Button
                 variant="ghost"
                 size="icon"
-                className="fixed top-4 left-4 z-50"
+               
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
               >
                 <MenuIcon className="h-6 w-6" />
               </Button>
             )}
+            <h1 className="mx-4 text-3xl drop-shadow-xl font-extrabold text-black">
+              PRODUCTS
+            </h1>
 
-            {/* Conditional Sidebar based on category */}
-            <div className="w-64 shrink-0">
+            
+            </div>
+
+            {/* Filters Sidebar */}
+            <div className="mt-4">
               {activeCategory === "sanitaryware" ? (
                 <FilterSidebar
                   selectedFilters={selectedFilters}
@@ -131,34 +115,65 @@ const Products = () => {
                 />
               )}
             </div>
+          </div>
 
-            {/* Main content */}
-            <div className="flex-1 transition-all duration-300 ease-in-out">
-              <div className="mb-8">
-                <h1 className="text-4xl font-light text-gray-900 mb-2">
-                  {activeCategory === "sanitaryware"
-                    ? "Sanitaryware Products"
-                    : "Tiles Collection"}
-                </h1>
-                {selectedFilters.length > 0 && (
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm text-gray-500">
-                      {selectedFilters.length} filter
-                      {selectedFilters.length > 1 ? "s" : ""} applied
-                    </span>
-                  </div>
-                )}
-              </div>
-              <ProductGrid
-                selectedFilters={selectedFilters}
-                category={activeCategory}
-              />
+          {/* Right Section - Tabs & Product Grid */}
+          <div className="col-span-3  mt-[-25px] md:mt-2">
+            {/* Centered Tabs Navigation */}
+            <div className="flex mx-12 md:justify-center mb-8">
+              <Tabs
+                value={activeCategory}
+                onValueChange={(value) =>
+                  setActiveCategory(value as ProductCategory)
+                }
+              >
+                <TabsList className="grid w-[200px] md:w-[400px] grid-cols-2">
+                  <TabsTrigger
+                    value="tiles"
+                    className="data-[state=active]:bg-orange-500 data-[state=active]:text-white text-xs md:text-sm"
+                  >
+                    Tiles
+                  </TabsTrigger>
+                  <TabsTrigger
+                    value="sanitaryware"
+                    className="data-[state=active]:bg-orange-500 data-[state=active]:text-white text-xs md:text-sm"
+                  >
+                    Sanitaryware
+                  </TabsTrigger>
+                </TabsList>
+              </Tabs>
             </div>
+
+            {/* Product Grid Section */}
+            <div className="mb-8">
+            
+            <span className="mx-12 md:mx-2 inline-flex items-center rounded-md bg-green-800 px-2 py-1 text-sm font-medium text-orange-200 ring-1 ring-yellow-600/20 ring-inset">
+              
+                {activeCategory === "sanitaryware"
+                  ? "Sanitaryware Products"
+                  : "Tiles Collection"}
+              
+              </span>
+              {selectedFilters.length > 0 && (
+                <div className="flex items-center gap-2 mt-4 mx-12 px-1">
+                  <span className="text-xs text-green-700 font-medium">
+                    {selectedFilters.length} filter
+                    {selectedFilters.length > 1 ? "s" : ""} applied
+                  </span>
+                </div>
+              )}
+            </div>
+
+            <ProductGrid
+              selectedFilters={selectedFilters}
+              category={activeCategory}
+            />
           </div>
         </div>
       </div>
+
       <section>
-        <Footer/>
+        <Footer />
       </section>
     </>
   );

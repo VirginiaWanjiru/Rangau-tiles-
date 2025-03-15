@@ -88,12 +88,19 @@ const Contact = () => {
     },
   };
 
+  const socialMediaItems = [
+    { platform: "facebook", username: "@Rangau Tiles and Sanitaryware Ltd", url: "https://www.facebook.com/people/Rangau-Tiles-and-Sanitaryware-Ltd/61570018273699/" },
+    { platform: "instagram", username: "@rangautiles", url: "https://www.instagram.com/rangautiles/" },
+    { platform: "tiktok", username: "@rangautiles", url: "https://www.tiktok.com/@rangautiles" },
+    { platform: "twitter", username: "@rangautiles", url: "https://x.com/rangautiles" }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative w-full h-96 overflow-hidden">
+      <div className="relative w-full h-[40vh] md:h-[50vh] lg:h-[70vh] overflow-hidden">
         <div className="absolute inset-0 bg-gray-800">
           <Image
 
@@ -109,7 +116,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl font-bold text-white tracking-wider"
+            className="text-[#FFFFFF] text-4xl font-semibold md:text-7xl lg:text-8xl"
           >CONTACT US
           </motion.h1>
         </div>
@@ -132,7 +139,7 @@ const Contact = () => {
 
               {/* Contact Header */}
                 <h1 className="p-4 ml-0.5 text-3xl drop-shadow-xl font-extrabold text-[black]">
-                  Get In Touch
+                Let&apos;s Get In Touch!
                 </h1>
                 
       {/* Contact Content */}
@@ -162,16 +169,12 @@ const Contact = () => {
     />
 
     <ContactCard 
-      icon={<AtSign className="w-6 h-6 text-gray-700" />} 
-      title="Social Media"
-      items={[
-        "@Rangau Tiles",
-        "@Rangau Tiles",
-        "@Rangau Tiles"
-      ]}
-      socialIcons={true}
-      extraClasses="h-full"
-    />
+     icon={<AtSign className="w-6 h-6 text-gray-700" />}
+     title="Social Media"
+     items={socialMediaItems}
+     socialIcons={true}
+     extraClasses="h-full"
+     />
 
     <ContactCard 
       icon={<MapPin className="w-6 h-6 text-gray-700" />} 
@@ -195,7 +198,7 @@ const Contact = () => {
 
   {/* Contact Form - Right Side */}
   <div className="col-span-1 lg:col-span-4 relative pt-0 rounded-lg">
-              <h3 className="text-gray-900 font-medium mb-2 absolute -top-1 left-0 right-0 text-center z-10 mb-10 mt-4">Send us a message!</h3>
+              <h3 className="text-gray-900 font-medium mb-2 absolute -top-8 left-0 right-0 text-center z-10">Send us a message!</h3>
               <div className="bg-gradient-to-r from-orange-400 to-orange-500 shadow-md">
                 <div className="p-6 flex flex-col h-full">
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -286,7 +289,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-</motion.div>
+          </motion.div>
 
 
 
@@ -349,7 +352,7 @@ const Contact = () => {
         {/* Second Map */}
         <div className="flex justify-center md:justify-start order-1 md:order-2 h-full">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6347814345304!2d36.72896331059185!3d-1.395606798585333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0431a62a1bcf%3A0x3c2eb4e18031fe89!2sExciting%20Hotel!5e0!3m2!1sen!2ske!4v1740939307221!5m2!1sen!2ske"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.6351689407084!2d36.72911997496591!3d-1.3953782985914411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMjMnNDMuNCJTIDM2wrA0Myc1NC4xIkU!5e0!3m2!1sen!2ske!4v1741601374857!5m2!1sen!2ske"
             className="w-full h-52 md:h-[220px] rounded-lg shadow-md"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade">
