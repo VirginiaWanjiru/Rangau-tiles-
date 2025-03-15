@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import { useState } from "react";
 
 type ProductCategory = "sanitaryware" | "tiles";
@@ -25,7 +26,7 @@ const Products = () => {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [activeCategory, setActiveCategory] =
-    useState<ProductCategory>("sanitaryware");
+    useState<ProductCategory>("tiles");
   const isMobile = useIsMobile();
 
   const handleFilterChange = (filter: string) => {
@@ -42,17 +43,44 @@ const Products = () => {
 
   return (
     <>
+      <Head>
+        <title>
+          Products - Rangau Tiles and Sanitaryware Limited | Premium Tiles &
+          Sanitaryware in Nairobi, Rongai & Kenya
+        </title>
+        <meta
+          name="description"
+          content="Discover our extensive range of premium sanitaryware and tiles. Explore quality wall tiles, floor tiles, and sanitary products at Rangau Tiles and Sanitaryware Limited, serving Nairobi, Rongai, and Kenya."
+        />
+        <meta
+          name="keywords"
+          content="Rangau Tiles, Sanitaryware, Tiles, Premium Tiles, Wall Tiles, Floor Tiles, Ceramic Tiles, Porcelain Tiles, Nairobi, Rongai, Kenya, building materials,25x40, 30x30, 30x60, 60x60, 80x80, 60x120, 80x120, 120x120, 120x240, 30x30, 30x60, 60x60, 80x80, 60x120, 80x120, 120x120, 120x240, 30x30, 30x60, 60x60, 80x80, 60x120, 80x120, 120x120, 120x240, 30x30, 30x60, 60x60, 80x80, 60x120, 80x120, 120x120, 120x240, 30x30, 30x60, 60x60, 80x80, 60x120, 80x120, 120x120, 120x240, 30x30, 30x60, 60x60, 80x80, 60x120, 80x120, 120x120, 120x240, 30x30, 30x60, 60x60, 80x80, 60x120, 80x120, 120x120, 120x240"
+        />
+        <link rel="canonical" href="https://rangautiles.com/sanitaryware" />
+        <meta
+          property="og:title"
+          content="Products - Rangau Tiles and Sanitaryware Limited"
+        />
+        <meta
+          property="og:description"
+          content="Explore premium tiles and sanitaryware at Rangau Tiles and Sanitaryware Limited – your trusted source for quality building materials in Nairobi, Rongai, and Kenya."
+        />
+        <meta property="og:url" content="https://rangautiles.com/sanitaryware" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
+
       <Navbar />
 
       <section className="">
         <div className="relative bg-[url('/Products.png')] bg-cover bg-center h-[40vh] md:h-[50vh] lg:h-[70vh] flex items-center justify-center">
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
           <div className="relative flex justify-center mt-9 pt-3">
-            <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-[#FFFFFF] text-4xl font-semibold md:text-6xl lg:text-8xl">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-[#FFFFFF] text-4xl font-semibold md:text-6xl lg:text-8xl"
+            >
               PRODUCT CATALOG
             </motion.h1>
           </div>
@@ -66,7 +94,7 @@ const Products = () => {
               </BreadcrumbItem>
               <IoIosArrowForward />
               <BreadcrumbItem>
-                <BreadcrumbPage>Products </BreadcrumbPage>
+                <BreadcrumbPage>Products</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -78,26 +106,23 @@ const Products = () => {
           {/* Left Section - Product Title & Filters */}
           <div className="col-span-1">
             <div className="flex items-center">
-            {isMobile && (
-              <Button
-                variant="ghost"
-                size="icon"
-               
-                onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-              >
-                <MenuIcon className="h-6 w-6" />
-              </Button>
-            )}
-            <h1 className="mx-4 text-3xl drop-shadow-xl font-extrabold text-black">
-              PRODUCTS
-            </h1>
-
-            
+              {isMobile && (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                >
+                  <MenuIcon className="h-6 w-6" />
+                </Button>
+              )}
+              <h1 className="mx-4 text-3xl drop-shadow-xl font-extrabold text-black">
+                PRODUCTS
+              </h1>
             </div>
 
             {/* Filters Sidebar */}
             <div className="mt-4">
-              {activeCategory === "sanitaryware" ? (
+              {activeCategory === "tiles" ? (
                 <FilterSidebar
                   selectedFilters={selectedFilters}
                   onFilterChange={handleFilterChange}
@@ -118,7 +143,7 @@ const Products = () => {
           </div>
 
           {/* Right Section - Tabs & Product Grid */}
-          <div className="col-span-3  mt-[-25px] md:mt-2">
+          <div className="col-span-3 mt-[-25px] md:mt-2">
             {/* Centered Tabs Navigation */}
             <div className="flex mx-12 md:justify-center mb-8">
               <Tabs
@@ -146,13 +171,10 @@ const Products = () => {
 
             {/* Product Grid Section */}
             <div className="mb-8">
-            
-            <span className="mx-12 md:mx-2 inline-flex items-center rounded-md bg-green-800 px-2 py-1 text-sm font-medium text-orange-200 ring-1 ring-yellow-600/20 ring-inset">
-              
+              <span className="mx-12 md:mx-2 inline-flex items-center rounded-md bg-green-800 px-2 py-1 text-sm font-medium text-orange-200 ring-1 ring-yellow-600/20 ring-inset">
                 {activeCategory === "sanitaryware"
                   ? "Sanitaryware Products"
                   : "Tiles Collection"}
-              
               </span>
               {selectedFilters.length > 0 && (
                 <div className="flex items-center gap-2 mt-4 mx-12 px-1">

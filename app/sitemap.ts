@@ -5,6 +5,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://rangautiles.com/", lastModified: new Date() },
     { url: "https://rangautiles.com/about", lastModified: new Date() },
     { url: "https://rangautiles.com/sanitaryware", lastModified: new Date() },
-    { url: "https://rangautiles.com/contactus", lastModified: new Date() },
+    { url: "https://rangautiles.com/", lastModified: new Date() },
   ];
 }
+
+
+
+

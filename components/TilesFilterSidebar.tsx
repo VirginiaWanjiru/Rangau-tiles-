@@ -17,7 +17,10 @@ const filters = [
     id: "wall",
     label: "Wall",
     hasSubcategories: true,
-    subcategories: [{ id: "25x40", label: "25 x 40" }],
+    subcategories: [
+      { id: "25x40", label: "25 x 40" },
+      { id: "micassowall", label: "Micasso (300 x 600mm)"}
+    ],
   },
   {
     id: "floor",
@@ -28,6 +31,7 @@ const filters = [
       { id: "40x40", label: "40 x 40" },
       { id: "50x50", label: "50 x 50" },
       { id: "60x60", label: "60 x 60" },
+      { id: "micassofloor", label: "Micasso (300 x 600mm)"}
     ],
   },
   {
