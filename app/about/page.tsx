@@ -206,6 +206,7 @@ export default function About() {
                 <p className="flex text-justify justify-center">
                   Leader in tiles and sanitaryware distribution.
                 </p>
+
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md h-auto md:h-40">
                 <h2 className="text-xl text-[#F38B2F] font-semibold text-center mb-4">

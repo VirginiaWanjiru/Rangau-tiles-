@@ -20,9 +20,9 @@ export default function Home() {
       description: "Experience our high-quality floor tiles collection available across Kenya.",
     },
     {
-      image: "/images/cement.jpg",
-      title: "CEMENT AND ADHESIVES",
-      description: "Trusted Kenyan cement and adhesives for construction projects in Nairobi and Rongai.",
+      image: "/images/cements.png",
+      title: "CEMENT AND ADHESIVES ",
+      description: "Our trusted Kenyan cements and adhesives for your construction use",
     },
   ];
 

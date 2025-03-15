@@ -2145,8 +2145,8 @@ const tilesProducts = [
   {
     id: 81,
     name: "FGP 33518K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33518 K.jpg",
     suggestions: [
       "Great for creating a sophisticated, high-end look.",
@@ -2157,8 +2157,8 @@ const tilesProducts = [
   {
     id: 82,
     name: "FGP 33528K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33528 K.jpg",
     suggestions: [
       "Ideal for creating a sleek, minimalistic design.",
@@ -2169,8 +2169,8 @@ const tilesProducts = [
   {
     id: 83,
     name: "FGP 33530K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33530 K.jpg",
     suggestions: [
       "Adds a contemporary edge to any room.",
@@ -2181,8 +2181,8 @@ const tilesProducts = [
   {
     id: 84,
     name: "FGP 33547K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33547 K.jpg",
     suggestions: [
       "A stylish and sophisticated choice for any space.",
@@ -2193,8 +2193,8 @@ const tilesProducts = [
   {
     id: 85,
     name: "FGP 33584K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33584 K.jpg",
     suggestions: [
       "Creates a refined, elegant atmosphere in any room.",
@@ -2205,8 +2205,8 @@ const tilesProducts = [
   {
     id: 86,
     name: "FGP 33703K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33703 K.jpg",
     suggestions: [
       "A sleek and stylish option for modern interiors.",
@@ -2217,8 +2217,8 @@ const tilesProducts = [
   {
     id: 87,
     name: "FGP 33707K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33707 K.jpg",
     suggestions: [
       "Ideal for achieving a chic, contemporary look.",
@@ -2229,8 +2229,8 @@ const tilesProducts = [
   {
     id: 88,
     name: "FGP 33725K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33725 K.jpg",
     suggestions: [
       "Brings a sophisticated and clean look to your room.",
@@ -2241,8 +2241,8 @@ const tilesProducts = [
   {
     id: 89,
     name: "FGP 33737K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33737 K.jpg",
     suggestions: [
       "Adds a bold and contemporary touch to your space.",
@@ -2253,8 +2253,8 @@ const tilesProducts = [
   {
     id: 90,
     name: "FGP 33738K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33738 K.jpg",
     suggestions: [
       "Perfect for modern, high-traffic spaces.",
@@ -2265,8 +2265,8 @@ const tilesProducts = [
   {
     id: 91,
     name: "FGP 33740K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33740 K.jpg",
     suggestions: [
       "Ideal for creating a sleek and stylish space.",
@@ -2277,8 +2277,8 @@ const tilesProducts = [
   {
     id: 92,
     name: "FGP 33742K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33742 K.jpg",
     suggestions: [
       "A great option for creating a minimalistic and contemporary feel.",
@@ -2289,8 +2289,8 @@ const tilesProducts = [
   {
     id: 93,
     name: "FGP 33744K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33744 K.jpg",
     suggestions: [
       "Ideal for modern, upscale interiors.",
@@ -2301,8 +2301,8 @@ const tilesProducts = [
   {
     id: 94,
     name: "FGP 33745K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33745 K.jpg",
     suggestions: [
       "Perfect for creating a sleek, refined look in any room.",
@@ -2313,8 +2313,8 @@ const tilesProducts = [
   {
     id: 95,
     name: "FGP 33746K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33746 K.jpg",
     suggestions: [
       "Adds a modern and high-end touch to any space.",
@@ -2325,8 +2325,8 @@ const tilesProducts = [
   {
     id: 96,
     name: "FGP 33747K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33747 K.jpg",
     suggestions: [
       "A great choice for contemporary and minimalistic interiors.",
@@ -2337,8 +2337,8 @@ const tilesProducts = [
   {
     id: 97,
     name: "FGP 33751K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33751 K.jpg",
     suggestions: [
       "Perfect for adding a modern, stylish flair to your room.",
@@ -2349,8 +2349,8 @@ const tilesProducts = [
   {
     id: 98,
     name: "FGP 33752K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33752 K.jpg",
     suggestions: [
       "A sophisticated choice for high-end spaces.",
@@ -2361,8 +2361,8 @@ const tilesProducts = [
   {
     id: 99,
     name: "FGP 33753K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33753 K.jpg",
     suggestions: [
       "An ideal choice for creating a chic and contemporary atmosphere.",
@@ -2373,8 +2373,8 @@ const tilesProducts = [
   {
     id: 100,
     name: "FGP 33754K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33754 K.jpg",
     suggestions: [
       "Perfect for adding a bold and modern touch to any space.",
@@ -2385,8 +2385,8 @@ const tilesProducts = [
   {
     id: 101,
     name: "FGP 33755K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33755 K.jpg",
     suggestions: [
       "A bold statement piece perfect for modern interiors.",
@@ -2397,8 +2397,8 @@ const tilesProducts = [
   {
     id: 102,
     name: "FGP 33756K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33756 K.jpg",
     suggestions: [
       "Perfect for creating a clean and polished look.",
@@ -2409,8 +2409,8 @@ const tilesProducts = [
   {
     id: 103,
     name: "FGP 33757K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33757 K.jpg",
     suggestions: [
       "Great for making a bold statement in contemporary spaces.",
@@ -2421,8 +2421,8 @@ const tilesProducts = [
   {
     id: 104,
     name: "FGP 33758K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33758 K.jpg",
     suggestions: [
       "A stylish choice for both residential and high-end commercial spaces.",
@@ -2433,8 +2433,8 @@ const tilesProducts = [
   {
     id: 105,
     name: "FGP 33759K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33759 K.jpg",
     suggestions: [
       "Perfect for contemporary spaces that need texture.",
@@ -2445,8 +2445,8 @@ const tilesProducts = [
   {
     id: 106,
     name: "FGP 33760K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33760 K.jpg",
     suggestions: [
       "A chic and modern choice for upscale interiors.",
@@ -2457,8 +2457,8 @@ const tilesProducts = [
   {
     id: 107,
     name: "FGP 33761K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33761 K.jpg",
     suggestions: [
       "Great for creating a contemporary, bold atmosphere.",
@@ -2469,8 +2469,8 @@ const tilesProducts = [
   {
     id: 108,
     name: "FGP 33762K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33762 K.jpg",
     suggestions: [
       "Adds a modern touch to any space with its sleek look.",
@@ -2481,8 +2481,8 @@ const tilesProducts = [
   {
     id: 109,
     name: "FGP 33763K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33763 K.jpg",
     suggestions: [
       "Perfect for creating a modern and timeless design.",
@@ -2493,8 +2493,8 @@ const tilesProducts = [
   {
     id: 110,
     name: "FGP 33764K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33764 K.jpg",
     suggestions: [
       "Ideal for creating a polished, modern space.",
@@ -2505,8 +2505,8 @@ const tilesProducts = [
   {
     id: 111,
     name: "FGP 33765K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33765 K.jpg",
     suggestions: [
       "A versatile option that works well in both modern and traditional spaces.",
@@ -2517,8 +2517,8 @@ const tilesProducts = [
   {
     id: 112,
     name: "FGP 33766K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33766 K.jpg",
     suggestions: [
       "Adds a stylish touch to any modern interior.",
@@ -2529,8 +2529,8 @@ const tilesProducts = [
   {
     id: 113,
     name: "FGP 33767K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33767 K.jpg",
     suggestions: [
       "A great option for creating an elegant, upscale look.",
@@ -2541,8 +2541,8 @@ const tilesProducts = [
   {
     id: 114,
     name: "FGP 33768K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33768 K.jpg",
     suggestions: [
       "A great option for creating a modern, sophisticated look.",
@@ -2553,8 +2553,8 @@ const tilesProducts = [
   {
     id: 115,
     name: "FGP 33770K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33770 K.jpg",
     suggestions: [
       "Great for creating a modern, sophisticated aesthetic.",
@@ -2565,8 +2565,8 @@ const tilesProducts = [
   {
     id: 116,
     name: "FGP 33771K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33771 K.jpg",
     suggestions: [
       "Perfect for creating sleek and modern spaces.",
@@ -2577,8 +2577,8 @@ const tilesProducts = [
   {
     id: 117,
     name: "FGP 33772K",
-    category: "wall",
-    subcategory: "25x40",
+    category: "floor",
+    subcategory: "30x30",
     image: "/FGP 33772 K.jpg",
     suggestions: [
       "Adds a luxurious, high-end touch to your interiors.",
