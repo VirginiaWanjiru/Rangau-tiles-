@@ -25,7 +25,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center">
         <Link href="/" className="flex items-center mr-12" title="Rangau Tiles and Sanitaryware Limited - Home">
-          <Image src={logo} alt="Rangau Tiles and Sanitaryware Limited Logo" className="h-12 w-auto" />
+          <Image src={logo} alt="Rangau Tiles and Sanitaryware Limited Logo" className="h-20 w-auto" />
         </Link>
 
         {/* Mobile Menu Button */}
