@@ -122,7 +122,7 @@ const Products = () => {
 
             {/* Filters Sidebar */}
             <div className="mt-4">
-              {activeCategory === "tiles" ? (
+              {activeCategory === "sanitaryware" ? (
                 <FilterSidebar
                   selectedFilters={selectedFilters}
                   onFilterChange={handleFilterChange}
