@@ -22,7 +22,7 @@ export default function Home() {
         "Experience our high-quality floor tiles collection available across Kenya.",
     },
     {
-      image: "/images/cements.png",
+      image: "/images/cements.jpg",
       title: "CEMENT AND ADHESIVES ",
       description:
         "Our trusted Kenyan cements and adhesives for your construction use",
