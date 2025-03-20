@@ -3462,6 +3462,43 @@ const tilesProducts = [
       "Excellent for heavy-duty applications where high-strength bonding of stone materials is essential.",
     ],
   },
+  {
+    id: 191,
+    name: "Citifix Tile Grout",
+    category: "cag",
+    subcategory: "grout",
+    image: "/tilegroutcitifix1.png",
+    suggestions: [
+      "Provides excellent bonding strength for filling tile joints, especially on polished surfaces.",
+      "Smooth and easy to apply — just mix with water for immediate use.",
+      "Perfect for grouting granite and marble tiles, offering long-lasting results.",
+    ],
+  },
+  {
+    id: 192,
+    name: "Citifix Tile Adhesive",
+    category: "cag",
+    subcategory: "adhesives",
+    image: "/citifixtile5.png",
+    suggestions: [
+      "Delivers superior bonding strength for securing a variety of tiles, including polished and glazed types.",
+      "Easy-to-use formula: mix with water for a hassle-free application.",
+      "Ideal for fixing ceramic, granite, or marble tiles on floors and walls.",
+    ],
+  },
+  {
+    id: 193,
+    name: "Citifix Granite Adhesive",
+    category: "cag",
+    subcategory: "adhesives",
+    image: "/granitecitifix3.png",
+    suggestions: [
+      "Specifically engineered for strong, lasting bonds on granite and marble surfaces.",
+      "User-friendly: just add water for a ready-mix adhesive.",
+      "Excellent for heavy-duty applications where high-strength bonding of stone materials is essential.",
+    ],
+  },
+  
   
 ];
 
