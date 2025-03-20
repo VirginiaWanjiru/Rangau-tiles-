@@ -3402,6 +3402,67 @@ const tilesProducts = [
       "Provides a sleek and modern aesthetic with high durability.",
     ],
   },
+  {
+    id: 186,
+    name: "Eurofix Grout",
+    category: "cag",
+    subcategory: "grout",
+    image: "/Eurofix1.png",
+    suggestions: [
+      "Provides excellent bonding strength for filling tile joints, especially on polished surfaces.",
+      "Smooth and easy to apply — just mix with water for immediate use.",
+      "Perfect for grouting granite and marble tiles, offering long-lasting results.",
+    ],
+  },
+  {
+    id: 187,
+    name: "Eurofix WallMaster",
+    category: "cag",
+    subcategory: "adhesives",
+    image: "/Wallmaster.png",
+    suggestions: [
+      "Designed for strong adhesion on vertical surfaces like walls — ideal for polished tile installations.",
+      "Convenient and fast: simply mix with water to get a ready-to-use paste.",
+      "Specially formulated for wall applications using granite or marble tiles.",
+    ],
+  },
+  {
+    id: 188,
+    name: "Eurofix Tile Adhesive",
+    category: "cag",
+    subcategory: "adhesives",
+    image: "/Tile_adhesive.png",
+    suggestions: [
+      "Delivers superior bonding strength for securing a variety of tiles, including polished and glazed types.",
+      "Easy-to-use formula: mix with water for a hassle-free application.",
+      "Ideal for fixing ceramic, granite, or marble tiles on floors and walls.",
+    ],
+  },
+  {
+    id: 189,
+    name: "Eurofix Interior Plus",
+    category: "cag",
+    subcategory: "adhesives",
+    image: "/Interior_Plus.png",
+    suggestions: [
+      "Optimized for indoor use, providing reliable bonding on polished surfaces.",
+      "Quick prep — mix with water to create a smooth, workable adhesive.",
+      "Best suited for interior granite and marble tile installations for a clean, professional finish.",
+    ],
+  },
+  {
+    id: 190,
+    name: "Eurofix Granite & Marble Adhesive",
+    category: "cag",
+    subcategory: "adhesives",
+    image: "/Granite.png",
+    suggestions: [
+      "Specifically engineered for strong, lasting bonds on granite and marble surfaces.",
+      "User-friendly: just add water for a ready-mix adhesive.",
+      "Excellent for heavy-duty applications where high-strength bonding of stone materials is essential.",
+    ],
+  },
+  
 ];
 
 export const ProductGrid = ({
