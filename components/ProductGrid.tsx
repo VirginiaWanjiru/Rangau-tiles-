@@ -3498,6 +3498,78 @@ const tilesProducts = [
       "Excellent for heavy-duty applications where high-strength bonding of stone materials is essential.",
     ],
   },
+  {
+    id: 194,
+    name: "FGP 55001 T",
+    category: "floor",
+    subcategory: "50x50",
+    image: "/FGP 55001 T.jpg",
+    suggestions: [
+      "Ideal for spacious areas, providing a modern, durable flooring solution.",
+      "Enhances large spaces with a sleek, contemporary design.",
+      "Pairs well with both bold and neutral color palettes for a balanced look.",
+    ],
+  },
+  {
+    id: 195,
+    name: "FGP 55009 T",
+    category: "floor",
+    subcategory: "50x50",
+    image: "/FGP 55009 T.jpg",
+    suggestions: [
+      "Ideal for spacious areas, providing a modern, durable flooring solution.",
+      "Enhances large spaces with a sleek, contemporary design.",
+      "Pairs well with both bold and neutral color palettes for a balanced look.",
+    ],
+  },
+  {
+    id: 196,
+    name: "PGS 55060 T",
+    category: "floor",
+    subcategory: "50x50",
+    image: "/PGS 55060 T.jpg",
+    suggestions: [
+      "Ideal for spacious areas, providing a modern, durable flooring solution.",
+      "Enhances large spaces with a sleek, contemporary design.",
+      "Pairs well with both bold and neutral color palettes for a balanced look.",
+    ],
+  },
+  {
+    id: 197,
+    name: "YMP 55441 T",
+    category: "floor",
+    subcategory: "50x50",
+    image: "/YMP 55441 T.jpg",
+    suggestions: [
+      "Ideal for spacious areas, providing a modern, durable flooring solution.",
+      "Enhances large spaces with a sleek, contemporary design.",
+      "Pairs well with both bold and neutral color palettes for a balanced look.",
+    ],
+  },
+  {
+    id: 198,
+    name: "YMP 55701 T",
+    category: "floor",
+    subcategory: "50x50",
+    image: "/YMP 55701 T.jpg",
+    suggestions: [
+      "Ideal for spacious areas, providing a modern, durable flooring solution.",
+      "Enhances large spaces with a sleek, contemporary design.",
+      "Pairs well with both bold and neutral color palettes for a balanced look.",
+    ],
+  },
+  {
+    id: 199,
+    name: "YMP 55779 T",
+    category: "floor",
+    subcategory: "50x50",
+    image: "/YMP 55779 7.jpg",
+    suggestions: [
+      "Ideal for spacious areas, providing a modern, durable flooring solution.",
+      "Enhances large spaces with a sleek, contemporary design.",
+      "Pairs well with both bold and neutral color palettes for a balanced look.",
+    ],
+  },
   
   
 ];
