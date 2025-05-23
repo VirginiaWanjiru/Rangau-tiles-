@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-orange-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
         {/* Logo and description column */}
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center text-center md:items-center md:text-center">
           <div className="flex justify-center md:justify-start mb-4">
             <Image src={logo} alt="Logo" className="h-24 w-auto" />
           </div>
