@@ -224,18 +224,17 @@ export default function Home() {
                 />
               </div>
             </div>
-           
-              <a
-                href="/sanitaryware"
-                className="flex items-center text-gray-500 hover:text-gray-950 transition mt-4 flex justify-end"
-              >
-                Browse our modern sanitaryware selection in Nairobi
-                <ArrowUpRightIcon className="h-6 w-14 mr-4" />
-              </a>
-            
+
+            <a
+              href="/sanitaryware"
+              className="flex items-center text-gray-500 hover:text-gray-950 transition mt-4 flex justify-end"
+            >
+              Browse our modern sanitaryware selection in Nairobi
+              <ArrowUpRightIcon className="h-6 w-14 mr-4" />
+            </a>
           </section>
 
-          <section className="px-4 sm:px-8 md:px-12 lg:px-12">
+          {/* <section className="px-4 sm:px-8 md:px-12 lg:px-12">
   <h1 className="text-lg font-semibold mb-2">
     Durable Cement and Adhesives
   </h1>
@@ -268,12 +267,59 @@ export default function Home() {
       <ArrowUpRightIcon className="h-6 w-6 ml-2" />
     </a>
   </div>
-</section>
+</section> */}
 
+          <section >
+            <h1 className="text-lg font-semibold mb-2">
+              Durable Cement and Adhesives
+            </h1>
+
+             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              {[
+                {
+                  src: "/images/simba.jpg",
+                  alt: "Quality cement and adhesives from Rangau Tiles in Kenya",
+                },
+                {
+                  src: "/images/bamburi.jpg",
+                  alt: "Durable cement and adhesives for construction projects",
+                },
+                {
+                  src: "/images/porcelain.jpg",
+                  alt: "Trusted cement and adhesives by Rangau Tiles",
+                },
+                {
+                  src: "/images/izomix.jpg",
+                  alt: "Premium quality cement and adhesives in Nairobi",
+                },
+              ].map((item, index) => (
+                <div key={index} className="w-full flex justify-center">
+                  <div className="relative w-full aspect-square">
+                    <Image
+                      src={item.src || "/placeholder.svg"}
+                      alt={item.alt}
+                      fill
+                      className="rounded shadow-md object-cover"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex justify-end mt-4">
+              <a
+                href="/sanitaryware"
+                className="flex items-center text-gray-500 hover:text-gray-950 transition"
+              >
+                Discover quality cement and adhesives in Kenya
+                <ArrowUpRightIcon className="h-6 w-6 ml-2" />
+              </a>
+            </div>
+          </section>
         </div>
       </div>
       <div>
-      <TipBox />
+        <TipBox />
       </div>
 
       <section className="mt-12">
