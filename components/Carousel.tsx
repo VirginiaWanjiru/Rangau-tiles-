@@ -311,7 +311,10 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
     setIsAutoPlaying(false)
   }
 
-  const handleDragEnd = (event :any, info: any) => {
+  const handleDragEnd = (
+    event: MouseEvent | TouchEvent | PointerEvent,
+    info: { offset: { x: number; y: number }; velocity: { x: number; y: number } }
+  ) => {
     setIsDragging(false)
     const threshold = 100
 
