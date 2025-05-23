@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav
       role="navigation"
       aria-label="Main Navigation"
-      className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm transition-all duration-300 px-6 py-4"
+      className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm transition-all duration-300 px-4 "
     >
       <div className="max-w-7xl mx-auto flex items-center">
         <Link href="/" className="flex items-center mr-12" title="Rangau Tiles and Sanitaryware Limited - Home">
@@ -45,9 +45,9 @@ const Navbar = () => {
               href={item.path}
               title={`${item.name} - Rangau Tiles`}
               className={cn(
-                'relative text-gray-800 hover:text-gray-900 transition-colors duration-200 text-base font-medium',
+                'relative text-gray-800 hover:text-gray-900 transition-colors duration-200 text-base font-light',
                 'after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full',
-                'after:origin-left after:scale-x-0 after:bg-orange-500 after:transition-transform',
+                'after:origin-left after:scale-x-0 after:bg-amber-400 after:transition-transform',
                 'hover:after:scale-x-100'
               )}
             >
